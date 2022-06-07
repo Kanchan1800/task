@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Web Page</title>
+    <style>
+        body{
+            margin:20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 255, 204);
+        }
+        header{
+            background-color: rgb(153, 0, 0);
+            border-bottom: 12px solid rgb(204, 0, 0);
+            color: white;
+            height: auto;
+            
+            
+        }
+        header>h1{
+            text-align: center;
+            padding-bottom: 1px;
+            color: #ffffcc;
+            margin-bottom: 0px;
+        }
+       h3{
+           background-color: rgb(0, 153, 0);;
+           color: white;
+           padding-left: 10px;
+       }
+       a{
+           text-decoration: none;
+       }
+        td{
+            border: 1px solid black;
+        }
+        img{
+            border: 1px dashed grey;
+        }
+        h4{
+            color: rgb(184, 184, 168);;
+        }
+        table{
+            background-color: rgb(204, 204, 204);;
+        }
+        ul{
+            color:brown;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header><h1><i>M y  &nbsp;&nbsp;&nbsp;   f i r s t  &nbsp;&nbsp;&nbsp;   w e b &nbsp;&nbsp;&nbsp;    p a g e</i></h1></header>
+    <main>
+        <H3>What this is</H3>
+        <p>Welcome to <em>my first webpage</em>.I created this webpage without the assistance of webpage editor.Just my title text editor and a keen <em><b>UNDERSTANDING <br> OF HTML.</b></em></p>
+        <h3>Why this is</h3>
+        <ul>
+            <li>To learn HTML</li>
+            <LI>List elements</LI>
+            <ol>
+                <li>Home</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ol>
+            <li>Here i have created ordered and unordered list</li>
+
+        </ul>
+        <h3>ZeusLearning.com</h3>
+        <a href="https://www.zeuslearning.com/" target="_blank">This link will open zeuslearning.com on new tab</a>
+        <h3>On clicking of the following image navigate to Google.com</h3>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><img style="width:200px;height:100px" src="https://d1lss44hh2trtw.cloudfront.net/assets/article/2021/10/26/google_feature.jpg" alt="Google">
+        </a>
+            <h4>Some random table</h4>
+        <table style="border: 1px solid black;">
+            <tr>
+                <td>Row 1,Cell 1</td>
+                <td>Row 1,Cell 2</td>
+                <td>Row 1,Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2,Cell 1</td>
+                <td>Row 2,Cell 2</td>
+                <td>Row 2,Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3,Cell 1</td>
+                <td>Row 3,Cell 2</td>
+                <td>Row 3,Cell 3</td>
+            </tr>
+        </table>
+        <h4>Some random form</h4>
+        <p><b>NOTE:</b>It looks the part but won't do anything.</p>
+        <br>
+    <form name="myForm" action="index2.html" onsubmit="return validateForm()" method="post">
+        <label >Name:</label><p style="color: red;display:none" id="req">Required</p><br><br>
+        <input type="text" name="user" id="user" placeholder="Your Name">
+        <br><br>
+        <label >Comments:</label>
+        <p style="color: red;display:none" id="treq">Required</p>
+        <br><br>
+
+        <textarea cols="15" rows="8" name="text" placeholder="Your comments"></textarea>
+        <br>
+        <label >Are you?</label><p style="color: red;display:none" id="greq">Required</p><br><br>
+        <input type="radio" name="gender" id="b" value="male">Male <br>
+        <input type="radio" name="gender" id="g" value="female" >Female <br>
+        <button>Submit Query</button>
+    </form>
+    </main>
+</body>
+<script>
+    function validateForm() {
+  let x = document.forms["myForm"]["user"].value;
+  let y = document.forms["myForm"]["text"].value;
+  if(x=="" ||y==""||( document.getElementById('b').checked== false && document.getElementById('g').checked==false))
+  {
+      if(x=="")
+      {
+          
+    document.getElementById('req').style.display="block";
+      }
+    if(y=="")
+    {
+    document.getElementById('treq').style.display="block";
+    
+    }
+    if( document.getElementById('b').checked== false && document.getElementById('g').checked==false)
+  {
+    document.getElementById('greq').style.display="block";
+      
+  }
+
+    return false;
+
+    
+  }
+  
+  
+  /*if (x == "" &&( document.getElementById('b').checked== false && document.getElementById('g').checked==false)&& y=="" ) 
+  {
+    alert("Please fill all fields");
+    return false;
+  }*/
+}
+</script>
+</html>
