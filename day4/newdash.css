@@ -71,6 +71,9 @@ border:2px solid #8DDC97;
 .hamburger{
     display: none;
 }
+.dropdown{
+    display: none;
+}
 .badge1 {
     position: absolute;
     top: 4px;
@@ -251,6 +254,9 @@ span.badgep {
     justify-content: space-around;
     margin-top:16px;
 }
+.card_hr{
+    margin-top:16px;
+}
 .expired{
     position: absolute;
     color: #D80000;
@@ -306,6 +312,7 @@ footer{
 .disabled{
     opacity: 0.5;
 }
+
 @media only screen and (max-width: 920px){
     span.badge1{
         right:182px;
