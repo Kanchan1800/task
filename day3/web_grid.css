@@ -1,17 +1,19 @@
 body{
     margin:4px 1px;
     
+    
 }
 .container{
     display:grid;
     grid-gap:0.8px;
     grid-template-columns:repeat(13,1fr);
-    grid-template-rows:20px 40px 40px 20px;
+    grid-template-rows:80px 160px 160px 80px;
     font-size:5px;
     text-align:center;
     color:white;
     justify-content:center;
     align-content:center;
+
    /* grid-template-areas:
     "h h h h h h h h h h h h h"
     "s s s c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 "
@@ -26,6 +28,7 @@ body{
    background-color:rgb(129 ,107 ,223);
    border:0.04em solid black;
     padding:7px 0px;
+    font-size: 40px;
 }
 .sidebar{
     /*grid-area:s;*/
@@ -34,7 +37,7 @@ body{
     background-color:rgb(54 ,200 ,192);
     padding:37px 0px;
     border:0.04em solid black;
-    
+    font-size: 40px;
 }
 .content1{
     /*grid-area:c1;*/
@@ -43,6 +46,7 @@ body{
     background-image: linear-gradient(to bottom right, rgb(104 ,79 ,215), rgb(57 ,215, 221));
     padding:17px 0px;
     border:0.04em solid black;
+    font-size: 40px;
 }
 .content2{
     grid-area:c2;
@@ -51,6 +55,7 @@ body{
     background-image: linear-gradient(to bottom right, rgb(104 ,79 ,215), rgb(57 ,215, 221));
     padding:17px 0px;
     border:0.04em solid black;
+    font-size: 40px;
 }
 .content3{
     grid-area:c3;
@@ -59,6 +64,7 @@ body{
     background-image: linear-gradient(to bottom right, rgb(104 ,79 ,215), rgb(57 ,215, 221));
     padding:17px 0px;
     border:0.04em solid black;
+    font-size: 40px;
 }
 .footer{
     grid-area:f;
@@ -67,12 +73,13 @@ body{
     background-color:rgb(129 ,107 ,223);
     padding:7px 0px;
     border:0.04em solid black;
+    font-size: 40px;
 }
 @media all and (max-width: 300px) {
     /* For mobile phones: */
     .container{
         grid-template-columns:repeat(13,1fr);
-    grid-template-rows:20px 40px auto auto 20px;
+    grid-template-rows:auto auto auto auto auto;
     }
     .footer{
         grid-row: 5/6;
@@ -91,7 +98,7 @@ body{
         /* For mobile phones: */
         .container{
             grid-template-columns:repeat(13,1fr);
-        grid-template-rows:20px auto 40px  auto auto 20px;
+        grid-template-rows:auto auto auto  auto auto auto;
         }
         .sidebar{
             grid-column: 1/-1;

@@ -114,10 +114,8 @@ for(const i of cards){
 }*/
 
 async function getapi(url) {
-    
    // Storing response
     const response = await fetch(url);
-    
    // Storing data in form of JSON
     var data = await response.json();
     console.log(data);
@@ -126,6 +124,7 @@ async function getapi(url) {
 }
 // Calling that async function
 getapi('cards.json');
+
 function show(cards)
 {
     for(const i of cards){
@@ -188,9 +187,6 @@ function show(cards)
 function view(cards)
 {
     let htmlCode = ``;
-
-// to get each single elephant object from the array and use them to build out html string, we need to open up our array, and we do that using forEach method. The forEach method, finds each item(object) in the array and returns them, this means we get 4 items that are objects back.
-
 cards.forEach(function(card) {
    htmlCode =
     htmlCode +
