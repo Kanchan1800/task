@@ -67,11 +67,27 @@ height: 30px;
 width: 30px;
 border-radius: 17px;
 border:2px solid #8DDC97;
+
 }
+#alert_div{
+    display: none;
+    position: absolute;
+    background-color: azure;
+    width: -webkit-fill-available;
+    margin: 5px 5px;
+    }
+
 .hamburger{
     display: none;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
 }
-.dropdown{
+#myLinks {
+    display: none ;
+  }
+.dropdown-content{
     display: none;
 }
 .badge1 {
@@ -332,9 +348,34 @@ footer{
         
     }
     .hamburger{
-        display:inline;
+        display:block;
         margin-right: 0px;
     }
+     #myLinks {
+        display: none;
+        background-color:#FFFFFF;
+        position: absolute;
+        margin-left: 69%;
+    position: absolute;
+    z-index: 1;
+    width: 29%;
+    box-shadow: 0px 13px 20px #0000003D;
+      }
+      
+      #myLinks a {
+
+        color: #1F7A54;
+        padding: 10px 8px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        font-family: 'Quicksand';
+        
+      }
+      #myLinks a:hover {
+        background-color: #0000001F;
+        color: #1F7A54;
+      }
     .card{
         height: auto;
     }
@@ -359,4 +400,5 @@ footer{
     .card{
         height: auto;
     }
+    
 }

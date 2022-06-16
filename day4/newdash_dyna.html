@@ -10,6 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- <script src="newdash.js"></script> -->
+ 
+    <style>
+        .a_d{
+        text-decoration:none;
+        padding:5px 0px;
+        margin-left:60px;
+        text-align:center;
+        }
+        </style>
 </head>
 <body>
     <header>
@@ -21,16 +30,30 @@
                 <li class="nav_item"><a href="#">USERS</a></li>
                 <li class="nav_item"><a href="#">REPORTS</a></li>
                 <li class="nav_item"><a href="#">ADMIN</a></li>
-                <li class="nav_item"><a href="#"><img src="images/alerts.svg" alt=""><span class="badge1">2</span></a></li>
+                <li class="nav_item"><a href="#" onmouseover="alert_div()"><img src="images/alerts.svg" alt=""><span class="badge1">2</span></a></li>
 
-                <li class="nav_item"><a href="#"><img src="images/announcements.svg" alt=""><span class="badge2">1</span></a></li>
+                <li class="nav_item"><a href="#" onmouseover="announce_div()"><img src="images/announcements.svg" alt=""><span class="badge2">1</span></a></li>
                 <li class="nav_item"><a href="#"><img class="profile" src="images/kanchan_new.jpg" alt=""><span class="badgep">T</span></a></li>
-                <li class="nav_item"><a href="#"><img class="hamburger" src="images/hamburger-menu.svg" alt=""></a></li>
+                <li class="nav_item"><a href="#" onclick="myFunction()" ><img class="hamburger" src="images/hamburger-menu.svg" alt=""></a></li>
                 
+                <!-- <li class="nav_item h_cont">
+                    <button class="hamburger "><img  src="images/hamburger-menu.svg" alt=""></button>
+                </li> -->
                   
             </ul>
         </nav>
+        
     </header>
+    <div id="myLinks">
+        <a href="#news">DASHBOARD</a>
+        <a href="#contact">CONTENT</a>
+        <a href="#about">USERS</a>
+        <a href="#about">REPORTS</a>
+        <a href="#about">ADMIN</a>
+    </div>
+    <div id="alert_div"></div>
+    <div id="announce_div"></div>
+
     <div class="tabs">
         <div class="tab_option act">
             <img src="images/courses.svg" alt="">

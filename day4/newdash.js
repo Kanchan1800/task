@@ -237,10 +237,52 @@ cards.forEach(function(card) {
   `;
 });
 
-const elephantCards = document.querySelector(".container");
+const contain = document.querySelector(".container");
 
-elephantCards.innerHTML = htmlCode;
+contain.innerHTML = htmlCode;
 
 }
 
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    let hicon=document.querySelector('.hamburger');
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      hicon.style.filter='unset';
+    } else {
+      x.style.display = "block";
+      hicon.style.filter='grayscale(1)';
+    }
+  }
+function alert_div(){
+    let a=['Subscribe','Complete your profile','Update']
+    const x=document.querySelector('#alert_div');
+    let z=document.querySelector('.badge1')
+    let y=document.querySelector('.badge1').textContent;
+    let d=`<h1>${y} Alert${parseInt(y)>1?"s":""}:</h1>`;
+    
+    for (let i=0;i<parseInt(y);i++)
+    {
+    d=d+`
+    <p>${a[i]}</p>
+    `
+    }
+    x.innerHTML=d;
+    if (x.style.display === "block") {
+        z.style.display = "none";
+        // hicon.style.filter='unset';
+        // hicon.style.filter='grayscale(1)';
+      } else {
+        x.style.display = "block";
+      }
+}  
 
+//   function mouse_out() {
+//     var x = document.getElementById("myLinks");
+//     // if (x.style.display === "block") {
+//     //   x.style.display = "none";
+//     // } else {
+//       x.style.display = "none";
+//     // }
+//   }  
+  
