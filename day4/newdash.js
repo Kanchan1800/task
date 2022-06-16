@@ -255,6 +255,7 @@ function alert_div(){
     const x=document.querySelector('#alert_div');
     let z=document.querySelector('.badge1')
     let y=document.querySelector('.badge1').textContent;
+    let hicon=document.querySelector('.alerts');
     let d=`<h1>${y} Alert${parseInt(y)>1?"s":""}:</h1>`;
     
     for (let i=0;i<parseInt(y);i++)
@@ -265,11 +266,12 @@ function alert_div(){
     }
     x.innerHTML=d;
     if (x.style.display === "block") {
-        z.style.display = "none";
-        // hicon.style.filter='unset';
-        // hicon.style.filter='grayscale(1)';
+        x.style.display = "none";
+        hicon.style.filter='unset';
       } else {
         x.style.display = "block";
+        
+        hicon.style.filter='grayscale(1)';
       }
 }  
 

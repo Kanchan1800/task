@@ -1,0 +1,28 @@
+.container{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: lightblue;
+    height:200px;
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+button{
+    background-color: lightblue;
+    margin:20px ;
+    width:100px;
+    height:40px;
+    transition:all 500ms;
+    color:black;
+}
+button:hover,button:focus{
+    background-color: peachpuff;
+}
+.text{
+    display: none;
+    color:black;
+    font-size:20px;
+}

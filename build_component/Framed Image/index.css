@@ -1,0 +1,29 @@
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 14px;
+}
+.card{
+   display:flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+   
+}
+.card img{
+    max-width:400px;
+    max-height:400px;
+    border:0px solid black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:1em;
+}
+.a{
+    display:flex;
+    padding: 5px;
+}
+.a input{
+    width:100px;
+}
