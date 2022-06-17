@@ -1,57 +1,80 @@
-body{
-margin: 0px;
-padding: 0px;
-/* Layout Properties */
-top: 0px;
-left: 0px;
-/* UI Properties */
-background: #EEEEEE;
+$background_color : rgb(238,238,238);
+$header_green:rgb(63,210,139);
+$card_bg:white;
+$about_txt_color:rgb(31,122,84);
+$tabs_bg_color:rgb(141,220,151);
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+  }
+@mixin font_style{
+    font-family: myFirstFont;
+    
+    font-weight: 500;
+}
+@mixin disp_flex {
+    display: flex;
+    align-items: center;
+}
+@mixin badge{
+    position: absolute;
+    top: 4px;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 75%;
+    background-color: #2A7FF3;
+    color: white;
+}
+@mixin arrow_down{
+    border: 0 !important;
+    border-bottom: 0.1px solid #000000 !important;
+    appearance: none;
+    background-image: url(../images/arrow-down.svg);
+    background-size: 20px;
+    background-position: calc(100%) center;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: $background_color;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
 }
 header{
-height: 56px;
-display: flex;
-/*background-image: transparent url('images/header\ pattern\ image.png');
-    */
-background: transparent url('images/header\ pattern\ image.png') 0% 0% repeat padding-box;
-background-color: black;
-align-items: center;
-justify-content: space-between;
-padding-right: 8px;
+    height: 56px;
+    background: black url('../images/header\ pattern\ image.png') 0% 0% repeat padding-box;
+    @include disp_flex();
+    justify-content: space-between;
+    padding-right: 8px;
+    .brand_img{
+        margin: 10px 5px;
+    }
 }
-.brand_img{
-    margin: 10px 5px;
-}
-/*
-.nav{
-    display: flex;
-    list-style-type: none;
-}*/
 .nav_list{
-list-style-type: none;
-display: flex;
-margin: 0 12px;
-padding: 0;
-align-items: center;
-font-size: 16px;
+    list-style-type: none;
+    margin: 0 12px;
+    padding: 0;
+    font-size: 16px;
+    @include disp_flex();
+    .nav_item{
+        padding: auto;
+    } 
+    }
 
-}
-.nav_item{
-    padding: auto;
-}
 li >a{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
+    @include font_style();
     font-size: 16px;
     line-height: 15px;
-    color: #3FD28B;
+    color: $header_green;
     text-decoration: none;
 }
 
 li:not(:nth-last-child(-n+4)) {
     height: 56px;
-    display: flex;
-    align-items: center;
+    @include disp_flex();
     margin-right: 28px;
     padding-left: 4px;
     padding-right: 4px;
@@ -61,12 +84,12 @@ li>a>img{
     margin-right:32px;
 }
 .profile{
-height: 30px;
-width: 30px;
-border-radius: 17px;
-border:2px solid #8DDC97;
-
-}
+    height: 30px;
+    width: 30px;
+    border-radius: 17px;
+    border:2px solid $header_green;
+    
+    }
 #alert_div{
     display: none;
     position: absolute;
@@ -89,26 +112,13 @@ border:2px solid #8DDC97;
     display: none;
 }
 .badge1 {
-    position: absolute;
-    top: 4px;
     right: 162px;
-    font-size: 12px;
-    height: fit-content;
-    width: fit-content;
-    padding: 4px 6px;
-    border-radius: 75%;
-    background-color: #2A7FF3;
-    color: white;
+    @include badge();
+    // height: fit-content; // width: fit-content;
 }
 span.badge2 {
-    position: absolute;
-    top: 4px;
+    @include badge();
     right: 107px;
-    font-size: 15px;
-    padding: 4px 6px;
-    border-radius: 188%;
-    background-color: #2A7FF3;
-    color: white;
 }
 span.badgep {
     position: absolute;
@@ -123,30 +133,27 @@ span.badgep {
 .active{
     border-bottom: 4px solid white;
     color: white !important;
-
+    a{
+        color: white !important;
+    }
 }
-.active > a{
-    color: white !important;
-}
+ 
 
 .tabs{
-    display: flex;
-    align-items: center;
+    @include disp_flex();
     justify-content: space-evenly;
     height: 64px;
-    background-color: #8DDC97;
+    background-color:$tabs_bg_color;
     margin:24px 24px 0px 24px;
 }
 .tab_option{
-    display: flex;
-    align-items: center;
+    @include disp_flex();
     flex: 1;
     justify-content: center;
 }
 .tab_option>p{
     font-size:16px;
-    font-family: "Quicksand";
-    font-weight: 500;
+    @include font_style();
     
 }
 .act{
@@ -155,45 +162,31 @@ span.badgep {
 }
 
 .filter{
-    display: flex;
-    align-items: center;
+    @include disp_flex();
+    @include font_style();
     justify-content: space-between;
     margin:24px 24px 0px 24px;
     font-size: 15px;
-    font-family: 'Quicksand';
 }
 .sort{
-    display: flex;
+    @include disp_flex();
     
 }
 #browser{
-    background-color: #EEEEEE;
+    background-color: $background_color;
     color: #333333;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
+    @include font_style();
     /* font-size: 16px; */
     margin-right: 24px !important;
     width: 156px;
     height: fit-content;
     margin: 12px 10px;
-    border: 0 !important;
-    border-bottom: 0.1px solid #000000 !important;
-    appearance: none;
-    background-image: url(images/arrow-down.svg);
-    background-size: 20px;
-    background-position: calc(100%) center;
-    background-repeat: no-repeat;
+    @include arrow_down();
 }
 #browser1{
     margin-top:16px ;
     width: 100%;
-    border: 0 !important;
-    border-bottom: 0.1px solid #000000 !important;
-    appearance: none;
-    background-image: url(images/arrow-down.svg);
-    background-size: 20px;
-    background-position: calc(100%) center;
-    background-repeat: no-repeat;
+    @include arrow_down();
 }
 .sort > ::placeholder{
     font-size: 18px;
@@ -201,8 +194,7 @@ span.badgep {
 }
 .card_content > ::placeholder{
     font-size: 16px;
-    font-weight: 500;
-    font-family: "Quicksand";
+    @include font_style();
     color:black;
 }
 .container{
@@ -217,9 +209,8 @@ span.badgep {
 }
 .card{
     /* height: auto; */
-    background-color: white;
-    
-    font-family: 'Quicksand';
+    background-color: $card_bg;
+    @include font_style();
 }
 .card_top{
     display: flex;
@@ -231,7 +222,7 @@ span.badgep {
 }
 .card_info{
     padding: 24px 16px 20px 24px;
-    background-color: white;
+    background-color: $card_bg;
 }
 .course_i{
     height: 157px;
@@ -279,14 +270,12 @@ span.badgep {
 }
 
 .about{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
+    @include font_style();
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 16px !important;
-    color: #1F7A54;
+    color: $about_txt_color;
     text-align: center;
-    
     margin: 0;
 }
 
@@ -304,24 +293,23 @@ footer{
     display: flex;
 }
 .copy{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
+    @include font_style();
     font-size: 12px;
     line-height: 16px;
     color: #616161;
     text-align: center;
     border-left: 1px;
-}
-
-.copy > span{
+    span{
     color: #616161;
-    font-family: 'Quicksand', sans-serif;
+    @include font_style();
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     margin-left: 8px;
     margin-right: 11px;
 }
+}
+ 
 
 .disabled{
     opacity: 0.5;
@@ -354,10 +342,10 @@ footer{
         background-color:#FFFFFF;
         position: absolute;
         margin-left: 69%;
-    position: absolute;
-    z-index: 1;
-    width: 29%;
-    box-shadow: 0px 13px 20px #0000003D;
+        position: absolute;
+        z-index: 1;
+        width: 29%;
+        box-shadow: 0px 13px 20px #0000003D;
       }
       
       #myLinks a {
