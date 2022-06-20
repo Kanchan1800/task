@@ -4,53 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
-    <style>
-        body{
-            font-family: 'Roboto';
-        }
-        img.user{
-            float: left;
-            padding-right:14px;
-            height:150px;
-            width: 150px;
-        }
-
-       .aa{
-           width: 20px;
-           height: 20px;
-           float: left;
-           padding-right: 5px;
-       }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Zeus Learning</title>
 </head>
 <body>
-    <div style="margin-top:180px;margin-left:400px;width:457px;height:138px" >
-        <img class="user" src="images/mosh.jpg" alt="mosh profile pic" style="width:130px;height:130px">
-    
-        <div> 
-            <p style="font-size: 20px;font-weight: 700;padding-top: 18px;margin-bottom: 1px;">@moshhamedani</p>
-
-            <p style="margin-top:10px;margin-bottom: 0%;">I'd love to teach you HTML/CSS!</p>
-        
-            <table style="margin-top:0px">
-                <tr style="margin-top:0px">
-                    <td> <img class="aa" src="images/comment.png" alt=""></td>
-                    <td><p style="font-size:medium;font-weight: 5px;color: gray;width:auto;padding-right: 24px">242</p></td>
-                    <td> <img style="width: 20px;height: 20px;" src="images/share.png" alt=""></td>
-                    <td><p style="font-size: medium;font-weight: 5px;color: gray;padding-right: 24px;">142</p></td>
-                    <td><img src="images/like.png" style="width: 20px;height: 20px;" alt=""></td>
-                    <td><p style="font-size: medium;font-weight: 5px;color: gray;padding-right: 24px;">2.6K</p></td>
-                </tr>
-            </table>
-            
-        
-
-        </div>  
-    </div>   
-<!--/div hello harsh this is kanchan branch stage co pull accept push --> 
+    <div class="card">
+        <img class="profile-pic" src="images/mosh.jpg" alt="Profile Picture"/>
+        <div class="card-info">
+            <h2>@moshahamedani</h2>
+            <p>I'd love to teach you HTML/CSS!</p>
+           
+            <div class="card-footer">
+                <p class="footer-text"> <img src="images/comment.png" alt="comment" style="width:20px;margin-right: 14px;"/> 242</p>
+                <p class="footer-text"> <img src="images/share.png" alt="loop" style="width:20px;margin-right: 14px;"/> &nbsp;142</p>
+                <p class="footer-text"> <img src="images/like.png" alt="like" style="width:20px;margin-right: 14px;"/> &nbsp;2.6k</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="newdash.css"> -->
+    <link rel="stylesheet" href="newdash.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <script src="newdash.js"></script> -->
     <link rel="stylesheet" href="styles/newdash.css">
-
+ 
+    <style>
+        .a_d{
+        text-decoration:none;
+        padding:5px 0px;
+        margin-left:60px;
+        text-align:center;
+        }
+        </style>
 </head>
 <body>
     <header>
@@ -22,14 +31,30 @@
                 <li class="nav_item"><a href="#">USERS</a></li>
                 <li class="nav_item"><a href="#">REPORTS</a></li>
                 <li class="nav_item"><a href="#">ADMIN</a></li>
-                <li class="nav_item"><a href="#"><img src="images/alerts.svg" alt=""><span class="badge1">2</span></a></li>
+                <li class="nav_item"><a href="#" onmouseover="alert_div()"><img class="alerts" src="images/alerts.svg" alt=""><span class="badge1">2</span></a></li>
 
-                <li class="nav_item"><a href="#"><img src="images/announcements.svg" alt=""><span class="badge2">1</span></a></li>
+                <li class="nav_item"><a href="#" onmouseover="announce_div()"><img class="announce" src="images/announcements.svg" alt=""><span class="badge2">1</span></a></li>
                 <li class="nav_item"><a href="#"><img class="profile" src="images/kanchan_new.jpg" alt=""><span class="badgep">T</span></a></li>
-                <li class="nav_item"><a href="#"><img class="hamburger" src="images/hamburger-menu.svg" alt=""></a></li>
+                <li class="nav_item"><a href="#" onclick="myFunction()" ><img class="hamburger" src="images/hamburger-menu.svg" alt=""></a></li>
+                
+                <!-- <li class="nav_item h_cont">
+                    <button class="hamburger "><img  src="images/hamburger-menu.svg" alt=""></button>
+                </li> -->
+                  
             </ul>
         </nav>
+        
     </header>
+    <div id="myLinks">
+        <a href="#news">DASHBOARD</a>
+        <a href="#contact">CONTENT</a>
+        <a href="#about">USERS</a>
+        <a href="#about">REPORTS</a>
+        <a href="#about">ADMIN</a>
+    </div>
+    <div id="alert_div"></div>
+    <div id="announce_div"></div>
+
     <div class="tabs">
         <div class="tab_option act">
             <img src="images/courses.svg" alt="">
@@ -60,7 +85,7 @@
 
 <div class="container">
     <!-- card 1 -->
-    <div class="card">
+    <!-- <div class="card">
         <div class="card_info">
             <div class="card_top">
                 <img class="course_i" src="images/imageMask-1.svg" alt="">
@@ -76,7 +101,7 @@
                         <b>24</b>Topics
                     </p>
                     <input list="name" name="name" id="browser1" placeholder="Mr. Frank's Class B">
-                        <datalist id="name">
+                        <datalist id="">
                           <option value="Alabama">
                           <option value="Firefox">
                           <option value="Chrome">
@@ -100,9 +125,9 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
     <!-- card 2 -->
-    <div class="card">
+    <!-- <div class="card">
         <div class="card_info">
             <div class="card_top">
                 <img class="course_i" src="images/imageMask-1.png" alt="">
@@ -118,7 +143,7 @@
                         <b>20</b>Topics
                     </p>
                     <input list="name" name="name" id="browser1" placeholder="No Classes">
-                        <datalist id="name">
+                        <datalist id="">
                           <option value="Alabama">
                           <option value="Firefox">
                           <option value="Chrome">
@@ -138,9 +163,9 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
     <!-- card 3 -->
-    <div class="card">
+    <!-- <div class="card">
         <div class="card_info">
             <div class="card_top">
                 <img class="course_i" src="images/imageMask-3.png" alt="">
@@ -156,7 +181,7 @@
                         <b>22</b>Topics
                     </p>
                     <input list="name" name="name" id="browser1" placeholder="All Classes">
-                        <datalist id="name">
+                        <datalist id="">
                           <option value="Alabama">
                           <option value="Firefox">
                           <option value="Chrome">
@@ -179,9 +204,9 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
     <!-- card 4 -->
-    <div class="card">
+    <!-- <div class="card">
         <div class="expired">EXPIRED</div>
         <div class="card_info">
             <div class="card_top">
@@ -222,7 +247,7 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
 </div>
 
@@ -241,4 +266,7 @@
 </footer>
 
 </body>
+<!-- <script src="newdash.js"> -->
+    <script src="newdash.js"></script>
+</script>
 </html>

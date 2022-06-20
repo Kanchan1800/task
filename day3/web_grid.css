@@ -75,7 +75,7 @@ body{
     border:0.04em solid black;
     font-size: 40px;
 }
-@media all and (max-width: 300px) {
+@media all and (max-width: 600px) {
     /* For mobile phones: */
     .container{
         grid-template-columns:repeat(13,1fr);
@@ -94,7 +94,7 @@ body{
         grid-row: 4/5;
     }
     }
-@media all and (max-width: 200px) {
+@media all and (max-width: 400px) {
         /* For mobile phones: */
         .container{
             grid-template-columns:repeat(13,1fr);
