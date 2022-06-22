@@ -69,10 +69,12 @@ border:2px solid #8DDC97;
 }
 #alert_div{
     display: none;
-    position: absolute;
     background-color: azure;
-    width: -webkit-fill-available;
-    margin: 5px 5px;
+    z-index: 1;
+    width: 20%;
+    position: absolute;
+    margin-left: 70%;
+    margin-right: 20% 
     }
 
 .hamburger{
@@ -227,6 +229,7 @@ span.badgep {
 
 .fav{
     height: 24px;
+    width:24px;
     height: fit-content; 
 }
 .card_info{
@@ -327,6 +330,18 @@ footer{
     opacity: 0.5;
 }
 
+.disbut{
+    display: none;
+}
+.showbut{
+    display: block;
+}
+.prev, .next{
+    height:40px;
+    width: 40px;
+    font-size: larger;
+    background-color: #8DDC97;
+}
 @media only screen and (max-width: 920px){
     span.badge1{
         right:182px;

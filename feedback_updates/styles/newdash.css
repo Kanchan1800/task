@@ -82,10 +82,12 @@ li > a > img {
 
 #alert_div {
   display: none;
-  position: absolute;
   background-color: azure;
-  width: -webkit-fill-available;
-  margin: 5px 5px;
+  z-index: 1;
+  width: 20%;
+  position: absolute;
+  margin-left: 70%;
+  margin-right: 20%;
 }
 
 .hamburger {
@@ -479,24 +481,41 @@ footer {
     display: none;
     background-color: #FFFFFF;
     position: absolute;
-    margin-left: 69%;
+    margin-left: 72%;
     position: absolute;
     z-index: 1;
-    width: 29%;
+    width: 26%;
     -webkit-box-shadow: 0px 13px 20px #0000003D;
             box-shadow: 0px 13px 20px #0000003D;
+  }
+  #myLinks .subcontent {
+    display: none;
+    padding-left: 20px;
+  }
+  #myLinks a:hover {
+    background-color: #F3F3F3;
+    color: #1F7A54;
+    font-size: 14px;
   }
   #myLinks a {
     color: #1F7A54;
     padding: 10px 8px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 500;
     display: block;
     font-family: 'Quicksand';
   }
-  #myLinks a:hover {
-    background-color: #0000001F;
-    color: #1F7A54;
+  .arrow {
+    border: solid #1F7A54;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    float: right;
+    margin-right: 10%;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
   .card {
     height: auto;
