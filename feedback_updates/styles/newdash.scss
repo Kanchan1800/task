@@ -90,19 +90,108 @@ li>a>img{
     border:2px solid $header_green;
     
     }
-#alert_div{
+.all_alerts{
+    overflow: scroll;
+    height: 540px;
+}    
+#alert_div,.outer_div_alert{
     display: none;
-    background-color: azure;
     z-index: 1;
     width: 20%;
+    height:582px;
     position: absolute;
-    margin-left: 70%;
-    margin-right: 20% 
+    margin-left: 73%;
+    margin-right:20%;
+    box-shadow: 0px 13px 20px #0000003D;
+   
+    
     }
 .alert_message{
-    @include disp();
+    padding: 16px;
+    @include disp_flex();
     @include font_style();
+    justify-content: space-between;
+    h5{
+        margin:0px;
+        font-size:14px;
+        color:#222222;
+    }
 } 
+.alert_course,.alert_class{
+    padding-left: 16px;
+    font-size: 12px;
+    @include font_style();
+}
+.alert_date{
+    display: flex;
+    justify-content: flex-end;
+    color:#6E6E6E;
+    font-size: 12px;
+    padding: 4px 16px 12px 0px;
+    @include font_style();
+}
+.alert_yellow{
+    background-color: #FFFFEE;
+}
+.alert_white{
+    background-color: white;
+}
+.alertdiv_button{
+    @include disp_flex();
+    @include font_style();
+    color: #1F7A54;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    height: 48px;
+}
+.all_announce{
+    overflow: scroll;
+    height: 440px;
+}    
+#announce_div{
+    display: none;
+    z-index: 1;
+    width: 20%;
+    // height:582px;
+    position: absolute;
+    margin-left: 75%;
+    margin-right:20%;
+    box-shadow: 0px 13px 20px #0000003D;
+   
+    
+    }
+.announce_message{
+    padding: 16px 0px 0px 16px;
+    @include disp_flex();
+    @include font_style();
+    justify-content: space-between;
+    h5{
+        margin:0px;
+        font-size:14px;
+        color:#222222;
+    }
+} 
+.announce_course{
+    padding-left: 16px;
+    padding-top: 0px;
+    margin: 0;
+    font-size: 12px;
+    @include font_style();
+}
+.announce_date{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color:#6E6E6E;
+    font-size: 12px;
+    padding: 4px 16px 12px 16px;
+    @include font_style();
+}
+
 .hamburger{
     display: none;
     background-color: transparent;
@@ -207,7 +296,7 @@ span.badgep {
 .container{
     /*padding:16px 24px 0px 24px;*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 24px;
     margin-top:16px;
@@ -321,8 +410,20 @@ footer{
 .disabled{
     opacity: 0.5;
 }
+.disbut{
+    display: none;
+}
+.showbut{
+    display: block;
+}
+.prev, .next{
+    height:40px;
+    width: 40px;
+    font-size: larger;
+    background-color: #8DDC97;
+}
 
-@media only screen and (max-width: 920px){
+@media only screen and (max-width: 980px){
     span.badge1{
         right:182px;
     }
@@ -339,6 +440,14 @@ footer{
         grid-template-columns: 1fr;
         margin-left: 24px;
         
+    }
+    #alert_div{
+        margin-left: 35%;
+        width:35%
+    }
+    #announce_div{
+        margin-left: 30%;
+        width:35%
     }
     .hamburger{
         display:block;
@@ -401,7 +510,14 @@ footer{
    
 }
 @media only screen and (max-width: 1090px){
-    
+    #alert_div{
+        margin-left: 48%;
+        width: 37%;
+    }
+    #announce_div{
+        margin-left: 50%;
+        width:38%
+    }
     .course_dates{
         display: block;
     }
@@ -412,4 +528,10 @@ footer{
         height: auto;
     }
     
+}
+@media only screen and (max-width:1600px) and (min-width:980px)
+{
+    .container{
+        grid-template-columns: 1fr 1fr ;
+    }
 }

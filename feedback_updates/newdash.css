@@ -69,7 +69,6 @@ border:2px solid #8DDC97;
 }
 #alert_div{
     display: none;
-    background-color: azure;
     z-index: 1;
     width: 20%;
     position: absolute;

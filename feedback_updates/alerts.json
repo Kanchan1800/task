@@ -4,41 +4,41 @@
         "date":"15-Sep-2018 at 07:21 pm",
         "course":"",
         "class":"",
-        "logo":"sub"
+        "logo":"class='zmdi zmdi-minus-circle-outline'"
     },
     {
         "content":"Lesson 3 Practice Worksheet overdue for Amy Santiago",
         "date":"15-Sep-2018 at 05:21 pm",
         "course":"Advanced Mathematics",
         "class":"",
-        "logo":"check"
+        "logo":"class='zmdi zmdi-check-circle'"
     },
     {
         "content":"23 new students created",
         "date":"14-Sep-2018 at 01:21 pm",
         "course":"",
         "class":"",
-        "logo":"sub"
+        "logo":"class='zmdi zmdi-minus-circle-outline'"
     },
     {
         "content":"15 submissions ready for evaluation",
         "date":"13-Sep-2018 at 01:15 pm",
         "course":"",
         "class":"Basics of Algebra",
-        "logo":"sub"
+        "logo":"class='zmdi zmdi-minus-circle-outline'"
     },
     {
         "content":"License for Basic Concepts in Geometry has been assigned to your... school",
         "date":"15-Sep-2018 at 07:21 pm",
         "course":"",
         "class":"",
-        "logo":"sub"
+        "logo":"class='zmdi zmdi-minus-circle-outline'"
     },
     {
         "content":"Lesson 3 Practice Worksheet overdue for Sam Diego",
         "date":"15-Sep-2018 at 07:21 pm",
         "course":"Advanced Mathematics",
         "class":"",
-        "logo":"check"
+        "logo":"class='zmdi zmdi-check-circle'"
     }
 ]

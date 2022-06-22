@@ -80,14 +80,154 @@ li > a > img {
   border: 2px solid #3fd28b;
 }
 
-#alert_div {
+.all_alerts {
+  overflow: scroll;
+  height: 540px;
+}
+
+#alert_div, .outer_div_alert {
   display: none;
-  background-color: azure;
+  z-index: 1;
+  width: 20%;
+  height: 582px;
+  position: absolute;
+  margin-left: 73%;
+  margin-right: 20%;
+  -webkit-box-shadow: 0px 13px 20px #0000003D;
+          box-shadow: 0px 13px 20px #0000003D;
+}
+
+.alert_message {
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: myFirstFont;
+  font-weight: 500;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alert_message h5 {
+  margin: 0px;
+  font-size: 14px;
+  color: #222222;
+}
+
+.alert_course, .alert_class {
+  padding-left: 16px;
+  font-size: 12px;
+  font-family: myFirstFont;
+  font-weight: 500;
+}
+
+.alert_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #6E6E6E;
+  font-size: 12px;
+  padding: 4px 16px 12px 0px;
+  font-family: myFirstFont;
+  font-weight: 500;
+}
+
+.alert_yellow {
+  background-color: #FFFFEE;
+}
+
+.alert_white {
+  background-color: white;
+}
+
+.alertdiv_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: myFirstFont;
+  font-weight: 500;
+  color: #1F7A54;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
+  height: 48px;
+}
+
+.all_announce {
+  overflow: scroll;
+  height: 440px;
+}
+
+#announce_div {
+  display: none;
   z-index: 1;
   width: 20%;
   position: absolute;
-  margin-left: 70%;
+  margin-left: 75%;
   margin-right: 20%;
+  -webkit-box-shadow: 0px 13px 20px #0000003D;
+          box-shadow: 0px 13px 20px #0000003D;
+}
+
+.announce_message {
+  padding: 16px 0px 0px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: myFirstFont;
+  font-weight: 500;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.announce_message h5 {
+  margin: 0px;
+  font-size: 14px;
+  color: #222222;
+}
+
+.announce_course {
+  padding-left: 16px;
+  padding-top: 0px;
+  margin: 0;
+  font-size: 12px;
+  font-family: myFirstFont;
+  font-weight: 500;
+}
+
+.announce_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #6E6E6E;
+  font-size: 12px;
+  padding: 4px 16px 12px 16px;
+  font-family: myFirstFont;
+  font-weight: 500;
 }
 
 .hamburger {
@@ -303,8 +443,8 @@ span.badgep {
   /*padding:16px 24px 0px 24px;*/
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 24px;
@@ -455,7 +595,22 @@ footer {
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 920px) {
+.disbut {
+  display: none;
+}
+
+.showbut {
+  display: block;
+}
+
+.prev, .next {
+  height: 40px;
+  width: 40px;
+  font-size: larger;
+  background-color: #8DDC97;
+}
+
+@media only screen and (max-width: 980px) {
   span.badge1 {
     right: 182px;
   }
@@ -472,6 +627,14 @@ footer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     margin-left: 24px;
+  }
+  #alert_div {
+    margin-left: 35%;
+    width: 35%;
+  }
+  #announce_div {
+    margin-left: 30%;
+    width: 35%;
   }
   .hamburger {
     display: block;
@@ -534,6 +697,14 @@ footer {
 }
 
 @media only screen and (max-width: 1090px) {
+  #alert_div {
+    margin-left: 48%;
+    width: 37%;
+  }
+  #announce_div {
+    margin-left: 50%;
+    width: 38%;
+  }
   .course_dates {
     display: block;
   }
@@ -542,6 +713,13 @@ footer {
   }
   .card {
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 980px) {
+  .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=newdash.css.map */

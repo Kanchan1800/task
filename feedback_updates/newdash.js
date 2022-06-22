@@ -127,7 +127,7 @@ function view(cards)
             <div class="card_top">
                 <img class="course_i" src=${card.image} alt="">
                 <div class="card_content">
-                    <h3>${card.title}</h3>
+                    <h3 tabindex="0">${card.title}</h3>
                     <p>${card.subject}</p>
                     <p>
                         <b style="margin-left: 0px;">${card.units}</b> Units 
@@ -149,7 +149,7 @@ function view(cards)
                          <span class="dash">${card.dash}</span> ${card.dates}</p>
                     </div>    
                 </div>
-                <img class="fav" onclick="togg(this)" src=${card.fav=='on'?"images/favourite.svg":"images/blank_star.svg"} alt="">
+                <img tabindex="0" class="fav" onclick="togg(this)" src=${card.fav=='on'?"images/favourite.svg":"images/blank_star.svg"} alt="">
             </div>
             <hr style="margin-top:16px">
             <div class="card_footer">
@@ -216,37 +216,49 @@ function subcontent(e){
         sub.style.display='none'
     }
 }
-let a;
-async function getalerts(url) {
+let aa;
+async function getalert(url) {
     const response = await fetch(url);// Storing response
-    a = await response.json();// Storing data in form of JSON
-     console.log(a);
+    aa = await response.json();// Storing data in form of JSON
+     console.log(aa);
  
  }
- // Calling that async function
- getalerts('alerts.json');
+ getalert('alerts.json');
 
- function alert_div(){
+ function alert_div()
+ {  
+     if(document.querySelector('#announce_div').style.display=="block"){
+        let z=document.querySelector('.badge2')
+        let hicon=document.querySelector('.announce');
+        z.style.display='block';
+        hicon.setAttribute('src','images/announcements.svg');
+        document.querySelector('#announce_div').style.display="none";
+     }
     const x=document.querySelector('#alert_div');
     let z=document.querySelector('.badge1')
-    let y=document.querySelector('.badge1').textContent;
     let hicon=document.querySelector('.alerts');
-    let d=`<h1>${y} Alert${parseInt(y)>1?"s":""}:</h1>`;
     
-    let htmlCode = ``;
-
-    a.forEach(function(alert) {
-   htmlCode =
-    htmlCode +
-    `<div class="alert_message">
-    <h5>${alert.content}</h5>
-    <span class="alert_status">${alert.logo}</span>
+    let htmlCode = `<div class="all_alerts">`;
+    aa.forEach(function(alert) {
+    htmlCode = htmlCode +
+    `
+    <div ${alert.logo=="class='zmdi zmdi-minus-circle-outline'"?'class="alert_js alert_yellow"':'class="alert_js alert_white"'}>
+        <div class="alert_message">
+            <h5>${alert.content}</h5>
+            <button  style='color:#1F7A54;border:0;background-color:transparent' onclick="change_alert_logo(this)" ${alert.logo}></button>
+        </div>
+        <div class="alert_course"><span>${alert.course==""?'':'Course : '}</span><b>${alert.course}</b></div>
+        <div class="alert_class"><span>${alert.class==""?'':'Class : '}</span><b>${alert.class}</b></div>
+        <div class="alert_date">${alert.date}</div>
+        <hr style="margin:0px">
     </div>
-    <div class="alert_course"><span>${alert.course==""?'':'Course'}</span><b>${alert.course}</b></div>
-    <div class="alert_class"><span>${alert.class==""?'':'Class'}</span><b>${alert.class}</b></div>
-    <div class="alert_date">${alert.date}</div>
     `
     });
+    htmlCode = htmlCode+`</div >`;
+    htmlCode=htmlCode+
+    `
+    <button class="alertdiv_button">SHOW ALL</button>
+    `
     x.innerHTML=htmlCode;
     if (x.style.display == "block") {
         x.style.display = "none";
@@ -256,5 +268,90 @@ async function getalerts(url) {
         x.style.display = "block";
         z.style.display='none';
         hicon.setAttribute('src','images/alerts_white.svg');
+      }
+}  
+
+function change_alert_logo(e){
+    //let alert_js=document.querySelector('.alert_js')
+    if(e.classList.contains('zmdi-minus-circle-outline'))
+    {
+    e.classList.remove('zmdi-minus-circle-outline');
+    e.classList.add('zmdi-check-circle');
+    // alert_js.classList.remove('alert_yellow');
+    // alert_js.classList.add('alert_white');
+    }
+    else if(e.classList.contains('zmdi-check-circle'))
+    {
+    e.classList.remove('zmdi-check-circle');
+    e.classList.add('zmdi-minus-circle-outline');
+    // alert_js.classList.remove('alert_white');
+    // alert_js.classList.add('alert_yellow');
+    
+    }
+    
+}
+let announce;
+async function getalerts(url) {
+    const response = await fetch(url);// Storing response
+    announce = await response.json();// Storing data in form of JSON
+     console.log(announce);
+ 
+ }
+ // Calling that async function
+ getalerts('announce.json');
+
+
+function announce_div(){
+    if(document.querySelector('#alert_div').style.display=="block"){
+        let z=document.querySelector('.badge1')
+        let hicon=document.querySelector('.alerts');
+        z.style.display='block';
+        hicon.setAttribute('src','images/alerts.svg');
+        document.querySelector('#alert_div').style.display="none";
+     }
+    const x=document.querySelector('#announce_div');
+    let z=document.querySelector('.badge2')
+    let hicon=document.querySelector('.announce');
+    
+    let htmlCode = `<div class="all_announce">`;
+
+    announce.forEach(function(a) {
+   htmlCode =
+    htmlCode +
+    `
+    <div ${a.logo=="class='zmdi zmdi-minus-circle-outline'"?'class="alert_js alert_yellow"':'class="alert_js alert_white"'}>
+        <div class="announce_message">
+            <div>
+                <p style="margin:0;font-size:12px">PA : <b>${a.pa}</b></p>
+                <h5 style="padding-top:5px;font-size:14px">${a.content}</h5>
+            </div>
+            <button  style='color:#1F7A54;border:0;background-color:transparent' onclick="change_alert_logo(this)" ${a.logo}></button>
+        </div>
+        <div class="announce_course"><span>${a.course==""?'':'Course : '}</span>${a.course}</div>
+        <div class="announce_date">
+                <div><span>${a.files==""?'':'Files : '}</span>${a.files}</div>
+                <div>${a.date}</div>
+        </div>
+        <hr style="margin:0px">
+    </div>
+    `
+    });
+    htmlCode = htmlCode+`</div >`;
+    htmlCode=htmlCode+
+    `
+    <div style="display:flex">
+    <button class="alertdiv_button">SHOW ALL</button>
+    <button class="alertdiv_button">CREATE ONE</button>
+    <div>
+    `
+    x.innerHTML=htmlCode;
+    if (x.style.display == "block") {
+        x.style.display = "none";
+        z.style.display='block';
+        hicon.setAttribute('src','images/announcements.svg');
+      } else {
+        x.style.display = "block";
+        z.style.display='none';
+        hicon.setAttribute('src','images/announce_white.svg');
       }
 }  
