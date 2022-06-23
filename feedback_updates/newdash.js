@@ -260,6 +260,7 @@ async function getalert(url) {
     <button class="alertdiv_button">SHOW ALL</button>
     `
     x.innerHTML=htmlCode;
+
     if (x.style.display == "block") {
         x.style.display = "none";
         z.style.display='block';
@@ -269,6 +270,10 @@ async function getalert(url) {
         z.style.display='none';
         hicon.setAttribute('src','images/alerts_white.svg');
       }
+//
+     
+      
+    //
 }  
 
 function change_alert_logo(e){

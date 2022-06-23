@@ -85,7 +85,7 @@ li > a > img {
   height: 540px;
 }
 
-#alert_div, .outer_div_alert {
+#alert_div {
   display: none;
   z-index: 1;
   width: 20%;

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newlogin.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <!-- <style>
+        body{
+            width:768px;
+            height:1024px;
+        }
+        .forms{
+            height:600px;
+            width: 488px;
+        }
+    </style> -->
+</head>
+<body>
+    <header>
+        <img src="images/logo used in header.svg" alt="">
+
+    </header>
+    <main>
+        <div class="forms" >
+            <form action="action_page.html" style="margin:0px;padding:0px" method="get" id="myForm" >
+                <!--div style="background-color:#3AC7EC;height:4px"></div-->
+                <!--span style="float:left;margin-left: 32px;padding-top: 23px;color:#1F7A54;height: 20px;" class="fa fa-arrow-left a" ></span-->
+                <div class="login_head">
+                    <img class="login_head_img" src="images/back.svg" alt="" >
+                <h2 class="header_2">Log in with Quantum</h2>
+                
+                </div>
+                <div class="info" style="margin:0px;">
+                        <div class="radio_div" style="display:flex;">
+                            <div style="display:flex">
+                            <input type="radio" id="radio" name="choice" value="District">
+                           <p id="radio_label" for="District" style="padding-left: 8px;">District</p>
+                           </div>
+                           <div style="display:flex;padding-left: 32px;">
+                           <input type="radio" id="radio" name="choice" value="Independent school">
+                           <p id="radio_label" for="Independent school"style="padding-left: 8px;">Independent school</p>
+                           </div>
+                        </div>
+                        <br>
+                        <div style="margin:0px;">
+                            <label  class="field">State*</label><br>
+                            <select  style="font-size:16px;margin-bottom: 0px;margin-top:5px;border: 0px;" name="state" id="state" aria-invalid="false" required>
+                                <option value="Alabama" >Alabama </option>
+                                <option value="Alabama1">Alabama1 </option>
+                                <option value="Alabama2">Alabama2</option>
+                              </select>
+                            <hr style="margin:0px;">
+                        </div>
+                        <div style="margin-top:36px">
+                            <label  class="field">District*</label><br>
+                            <select  style="font-size:16px;margin-bottom: 0px;margin-top:5px;border: 0px;" name="district" id="district" aria-invalid="false" required>
+                                <option value="Alabama School District" >Alabama School District</option>
+                                <option value="Alabama School District1">Alabama School District1</option>
+                                <option value="Alabama School District2">Alabama School District2</option>
+                              </select>
+                            <hr style="margin:0px;">
+                        </div>
+                        <div style="margin:0px;">
+                            <input placeholder="Username/Email ID*" id="login_input" name="username" required>
+                            
+                            <span style="float:right;font-size:14px;color:#1F7A54;font-weight:bold ;margin-top: 5px;">FORGOT USERNAME?</span>
+                        </div> <br>
+                        <div style="margin-top:34px">
+                            <div style="display:flex;justify-content: space-between;">
+                                <input type="password" placeholder="Password*" 
+                            style="border: 0px;
+                            font-size: 16px;" id="password" name="password" required
+                            >
+                            <img src="images/visibility_black_24dp.svg"  alt="">
+                            
+                            </div>
+                            <hr style="margin:0px;width: 100%;">
+                            <span style="float:right;font-size:14px;color:#1F7A54;font-weight:bold;margin-top: 5px;">FORGOT PASSWORD?</span>
+                           
+                        </div>
+                        <div style="margin-top:26px;display: flex;">
+                            <input type="checkbox" id="checkbox" name="checkb">
+                            <p style="padding-top:3px ;font-weight: bold;padding-left: 8px;">Remember Me</p>
+                        </div>
+
+                </div>
+                <div style="margin-top: 34px; display: flex; justify-content: center;">
+                    <button type="submit" onsubmit="myfunction()" id="submit" >LOG IN</button>
+                </div>
+                  </form>
+
+        </div>
+    </main>
+    <div style="margin-top: 33px;">
+        <p class="about">About <span>|</span> Contact Us</p>
+    </div>
+    <footer>
+        <img src="images/logo used in footer.svg"/>
+        <p style="margin: 0 16px; color: #0000001F;">|</p>
+        
+        <p class="copy">Copyright © 2020-2021 <span>Zeus Systems Pvt. Ltd.</span> All rights reserved.</p>
+    </footer>
+    <script src="newlogin.js"></script>
+
+
+
+
+</body>
+</html>
+

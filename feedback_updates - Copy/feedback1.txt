@@ -1,0 +1,12 @@
+Feedback 20/06
+1. Create a new HTML page and print all the data entered into login form -done
+2. Compare time taken by viewCard() function in both the approach -done
+3. Read about lazy loading for cards page
+4. Implement pagination if more than 12 cards are present on page
+5. Popup - z-index, focus trap, etc
+6. Commit message should be proper. Check best practices for commit message
+7. Proper branch names like 
+	bug/123
+	enhancement/545
+	task/555
+8. Install ESLint plugin. There should not be any lint error in code, else it will block push operation.

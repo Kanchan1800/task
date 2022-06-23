@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="newdash.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/newdash.css">
+
+</head>
+<body>
+    <header>
+        <img class="brand_img" src="images/logo used in header.svg" alt="">
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item active"><a href="#">DASHBOARD</a></li>
+                <li class="nav_item"><a href="#">CONTENT</a></li>
+                <li class="nav_item"><a href="#">USERS</a></li>
+                <li class="nav_item"><a href="#">REPORTS</a></li>
+                <li class="nav_item"><a href="#">ADMIN</a></li>
+                <li class="nav_item"><a href="#"><img src="images/alerts.svg" alt=""><span class="badge1">2</span></a></li>
+
+                <li class="nav_item"><a href="#"><img src="images/announcements.svg" alt=""><span class="badge2">1</span></a></li>
+                <li class="nav_item"><a href="#"><img class="profile" src="images/kanchan_new.jpg" alt=""><span class="badgep">T</span></a></li>
+                <li class="nav_item"><a href="#"><img class="hamburger" src="images/hamburger-menu.svg" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="tabs">
+        <div class="tab_option act">
+            <img src="images/courses.svg" alt="">
+            <p>Courses</p>
+        </div>
+        <div class="tab_option">
+            <img src="images/classes.svg" alt="">
+            <p>Courses</p>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="show">
+            <p>Showing 4 of 4 courses</p>
+        </div>
+        <div class="sort">
+            <p>Sort By:</p>
+            <input list="courses" placeholder="Course Name" id="browser">
+            <datalist id="courses">
+                <option value="Course1">
+                <option value="Course2">
+            </datalist>
+            <img src="images/sort.svg" alt="">
+           
+        </div>
+     
+    </div>
+<hr style="margin:0px 24px;">
+
+<div class="container">
+    <!-- card 1 -->
+    <div class="card">
+        <div class="card_info">
+            <div class="card_top">
+                <img class="course_i" src="images/imageMask-1.svg" alt="">
+                <div class="card_content">
+                    <h3>Acceleration</h3>
+                    <p>Physics '
+                        <span>|</span> 
+                        Grade 7 
+                        <span>+2</span></p>
+                    <p>
+                        <b style="margin-left: 0px;">4</b> Units 
+                        <b>24</b> Lessons 
+                        <b>24</b>Topics
+                    </p>
+                    <input list="name" name="name" id="browser1" placeholder="Mr. Frank's Class B">
+                        <datalist id="name">
+                          <option value="Alabama">
+                          <option value="Firefox">
+                          <option value="Chrome">
+                          <option value="Opera">
+                          <option value="Safari">
+                        </datalist>
+                    <div class="course_dates">
+                        <p>50 Students </p>
+                        
+                        <p> <span class="dash">|</span> 21-Jan-2020 - 21-Aug-2020</p>
+                    </div>    
+                </div>
+                <img class="fav"  src="images/favourite.svg" alt="">
+            </div>
+            <hr style="margin-top:16px">
+            <div class="card_footer">
+                <img src="images/preview.svg" alt="">
+                <img src="images/manage course.svg" alt="">
+                <img src="images/grade submissions.svg" alt="">
+                <img src="images/reports.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- card 2 -->
+    <div class="card">
+        <div class="card_info">
+            <div class="card_top">
+                <img class="course_i" src="images/imageMask-1.png" alt="">
+                <div class="card_content">
+                    <h3>Displacement, Velocity and Speed</h3>
+                    <p>Physics 2
+                        <span>|</span> 
+                        Grade 6 
+                        <span>+3</span></p>
+                    <p>
+                        <b style="margin-left: 0px;">2</b> Units 
+                        <b>15</b> Lessons 
+                        <b>20</b>Topics
+                    </p>
+                    <input list="name" name="name" id="browser1" placeholder="No Classes">
+                        <datalist id="name">
+                          <option value="Alabama">
+                          <option value="Firefox">
+                          <option value="Chrome">
+                          <option value="Opera">
+                          <option value="Safari">
+                        </datalist>
+                      
+                </div>
+                <img class="fav" src="images/favourite.svg" alt="">
+            </div>
+            <hr style="margin-top:16px">
+            <div class="card_footer">
+                <img src="images/preview.svg" alt="">
+                <img class="disabled" src="images/manage course.svg" alt="">
+                <img class="disabled" src="images/grade submissions.svg" alt="">
+                <img src="images/reports.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- card 3 -->
+    <div class="card">
+        <div class="card_info">
+            <div class="card_top">
+                <img class="course_i" src="images/imageMask-3.png" alt="">
+                <div class="card_content">
+                    <h3>Introduction to Biology: Micro organisms and how they affec...</h3>
+                    <p>Biology
+                        <span>|</span> 
+                        Grade 4 
+                        <span>+1</span></p>
+                    <p>
+                        <b style="margin-left: 0px;">5</b> Units 
+                        <b>16</b> Lessons 
+                        <b>22</b>Topics
+                    </p>
+                    <input list="name" name="name" id="browser1" placeholder="All Classes">
+                        <datalist id="name">
+                          <option value="Alabama">
+                          <option value="Firefox">
+                          <option value="Chrome">
+                          <option value="Opera">
+                          <option value="Safari">
+                        </datalist>
+                    <div class="course_dates">
+                        <p>500 Students </p>
+                        
+                    </div>    
+                </div>
+                <img class="fav" src="images/favourite.svg" alt="">
+            </div>
+            <hr style="margin-top:16px">
+            <div class="card_footer">
+                <img src="images/preview.svg" alt="">
+                <img class="disabled" src="images/manage course.svg" alt="">
+                <img class="disabled" src="images/grade submissions.svg" alt="">
+                <img src="images/reports.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- card 4 -->
+    <div class="card">
+        <div class="expired">EXPIRED</div>
+        <div class="card_info">
+            <div class="card_top">
+                <img class="course_i" src="images/imageMask-2.png" alt="">
+                <div class="card_content">
+                    <h3>Introduction to High School Mathematics</h3>
+                    <p>Mathematics
+                        <span>|</span> 
+                        Grade 8 
+                        <span>+3</span></p>
+                    <p>
+                        <b style="margin-left: 0px;">4</b> Units 
+                        <b>24</b> Lessons 
+                        <b>24</b>Topics
+                    </p>
+                    <input list="name" name="name" id="browser1" placeholder="Mr. Frank's Class A">
+                        <datalist id="">
+                          <option value="Alabama">
+                          <option value="Firefox">
+                          <option value="Chrome">
+                          <option value="Opera">
+                          <option value="Safari">
+                        </datalist>
+                    <div class="course_dates">
+                        <p>44 Students </p>
+                        
+                        <p> <span class="dash">|</span> 14-Oct-2019 - 20-Oct-2020</p>
+                    </div>    
+                </div>
+                <img class="fav" src="images/favourite.svg" alt="">
+            </div>
+            <hr style="margin-top:16px">
+            <div class="card_footer">
+                <img src="images/preview.svg" alt="">
+                <img src="images/manage course.svg" alt="">
+                <img src="images/grade submissions.svg" alt="">
+                <img src="images/reports.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div style="margin-top: 32px; margin-bottom:0">
+    <p class="about">About <span>|</span> Contact Us</p>
+</div>
+
+</div>
+<footer class="footer_div">
+<!-- <div class="footer_div"> -->
+    <img src="images/logo used in footer.svg"/>
+<p style="margin: 0 16px; color: #0000001F;">|</p>
+
+<p class="copy">Copyright © 2020-2021 <span>Zeus Systems Pvt. Ltd.</span> All rights reserved.</p>
+<!-- </div> -->
+</footer>
+
+</body>
+</html>
+

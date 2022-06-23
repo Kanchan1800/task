@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="action1">
+
+    </div>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+                function (m, key, value) {
+                    vars[key] = value;
+                });
+            return vars;
+        }
+    //var name= unescape(getUrlVars()[document.getElementById("choice")]);
+    document.getElementById("action1").innerHTML=
+    `
+    <p>District/Independent school:${unescape(getUrlVars()['choice'])}</p>
+    <p>State:${unescape(getUrlVars()['state'])}</p>
+    <p>District : ${unescape(getUrlVars()['district'])}</p>
+    <p>Username: ${unescape(getUrlVars()['username'])}</p>
+    <p>Password : ${unescape(getUrlVars()['password'])}</p>
+    <p>Checkbox : ${unescape(getUrlVars()['checkb'])}</p>
+    `
+    
+    
+    ;
+    </script>
+</body>
+</html>
