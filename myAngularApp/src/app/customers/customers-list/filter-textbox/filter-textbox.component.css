@@ -1,0 +1,13 @@
+.filter-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label {
+  padding: 5px;
+}
+/*# sourceMappingURL=filter-textbox.component.css.map */

@@ -103,8 +103,13 @@ li>a>img{
     margin-left: 73%;
     margin-right:20%;
     box-shadow: 0px 13px 20px #0000003D;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s ease-in-out;
+    // opacity: 0;
+    // transition: visibility 0s, opacity 0.5s !important;
+    
+    // -webkit-transition: all 0.5s ease-out;
+    // -moz-transition: all 0.5s ease-out; 
+    opacity: 0; 
+    transition: all 0.3s ease-out;
     }
     
 .alert_message{
@@ -154,7 +159,9 @@ li>a>img{
     height: 440px;
 }    
 #announce_div{
-    display: none;
+    visibility: hidden;
+    opacity: 0; 
+    transition: all 0.3s ease-out;
     z-index: 1;
     width: 20%;
     // height:582px;
@@ -201,7 +208,9 @@ li>a>img{
     margin: 0px;
 }
 #myLinks {
-    display: none ;
+    visibility: hidden;
+    opacity: 0; 
+    transition: all 0.3s ease-out;
    
   }
 
@@ -455,7 +464,9 @@ footer{
         margin-right: 0px;
     }
      #myLinks {
-        display: none;
+        visibility: hidden;
+    opacity: 0; 
+    transition: all 0.3s ease-out;
         background-color:#FFFFFF;
         position: absolute;
         margin-left: 72%;
@@ -534,5 +545,11 @@ footer{
 {
     .container{
         grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (min-width:980px)
+{
+    #myLinks{
+        display: none;
     }
 }

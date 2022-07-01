@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newlogin.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <!-- <style>
+        body{
+            width:768px;
+            height:1024px;
+        }
+        .forms{
+            height:600px;
+            width: 488px;
+        }
+    </style> -->
+</head>
+<body>
+    <header>
+        <img src="/HTML-CSS/day4/images/logo used in header.svg" alt="">
+
+    </header>
+    <main>
+        <div class="forms" >
+            <form action="/action_page.html" style="margin:0px;padding:0px">
+                <!--div style="background-color:#3AC7EC;height:4px"></div-->
+                <!--span style="float:left;margin-left: 32px;padding-top: 23px;color:#1F7A54;height: 20px;" class="fa fa-arrow-left a" ></span-->
+                <div class="login_head">
+                    <img class="login_head_img" src="images/back.svg" alt="" >
+                <h2 class="header_2">Log in with Quantum</h2>
+                
+                </div>
+                <div class="info" style="margin:0px;">
+                        <!--input style="margin-top: 34px;" type="radio" class="place" active>District
+                        <input  style="margin-left: 32px;" type="radio" class="place" disabled>Independent school
+                        <br-->
+                        <div class="radio_div" style="display:flex;">
+                            <div style="display:flex">
+                            <!--img id="radio" src="images/radio-button-on.svg"/-->
+                            <input type="radio" id="radio" name="choice" value="HTML">
+                           <p id="radio_label" for="District" style="padding-left: 8px;">District</p>
+                           </div>
+                           <div style="display:flex;padding-left: 32px;">
+                           <!--img id="radio" src="images/radio-button-off.svg"/-->
+                           <!-- <input type="radio" id="radio" name="choice" value="CSS"> -->
+                           <input type="radio" id="radio" name="choice" value="HTML">
+                           <p id="radio_label" for="Independent school"style="padding-left: 8px;">Independent school</p>
+                           </div>
+                        </div>
+                        <br>
+                        <div style="margin:0px;">
+                            <label  class="field">State*</label><br>
+                            <select  style="font-size:16px;margin-bottom: 0px;margin-top:5px;border: 0px;" name="test" aria-invalid="false">
+                                <option value="Tomato" >Alabama </option>
+                                <option value="Banana">Alabama1 </option>
+                                <option value="Apple">Alabama 2</option>
+                              </select>
+                            <!--label style="font-size:16px;margin-bottom: 0px;margin-top:5px">Alabama School District</label-->
+                            <!--span class="triangle-down"></span-->
+                            <hr style="margin:0px;">
+                        </div>
+                        <div style="margin-top:36px">
+                            <label  class="field">District*</label><br>
+                            <select  style="font-size:16px;margin-bottom: 0px;margin-top:5px;border: 0px;" name="test" aria-invalid="false">
+                                <option value="Tomato" >Alabama School District</option>
+                                <option value="Banana">Alabama School District</option>
+                                <option value="Apple">Alabama School District</option>
+                              </select>
+                            <!--label style="font-size:16px;margin-bottom: 0px;margin-top:5px">Alabama School District</label-->
+                            <!--span class="triangle-down"></span-->
+                            <hr style="margin:0px;">
+                        </div>
+                        <div style="margin:0px;">
+                            <!--p style="font-size:16px ;color:#666666;margin-bottom:0px;margin-top:56px">Username/Email ID*</p-->
+                            <!--input  type="password" placeholder="Username/Email ID*" 
+                            style="border: 0px;
+                            font-size: 16px; margin-top: 56px;"
+                            -->
+                            <input placeholder="Username/Email ID*" id="login_input"/>
+                            
+                            <span style="float:right;font-size:14px;color:#1F7A54;font-weight:bold ;margin-top: 5px;">FORGOT USERNAME?</span>
+                        </div> <br>
+                        <div style="margin-top:34px">
+                            <!--p class="b" style="font-size:16px ;color:#666666;margin-bottom:0px;margin-top:56px;width: 100%;margin-top: 30px;">Password*</p-->
+                            <div style="display:flex;justify-content: space-between;">
+                                <input type="password" placeholder="Password*" 
+                            style="border: 0px;
+                            font-size: 16px;"
+                            >
+                            <img src="images/visibility_black_24dp.svg"  alt="">
+                            
+                            </div>
+                            <hr style="margin:0px;width: 100%;">
+                            <span style="float:right;font-size:14px;color:#1F7A54;font-weight:bold;margin-top: 5px;">FORGOT PASSWORD?</span>
+                           
+                        </div>
+                        <div style="margin-top:26px;display: flex;">
+                            <!--img src="images/check_box_black_24dp.svg" alt="" style="margin-top:2px;float: left;"-->
+                            <input type="checkbox">
+                            <p style="padding-top:3px ;font-weight: bold;padding-left: 8px;">Remember Me</p>
+                        </div>
+
+                </div>
+                <div style="margin-top: 34px; display: flex; justify-content: center;">
+                    <button type="button" id="submit" >LOG IN</button>
+                </div>
+                <!--button style="width: 215.5PX;height:40px;margin-top:20px;border: none;text-decoration: none;border-radius:4px ;background-color:#3FD28B;text-align:center;margin-left:136px;box-shadow: 0px 3px 5px #0000003D;">LOG IN </button-->
+            </form>
+
+        </div>
+    </main>
+    <div style="margin-top: 33px;">
+        <p class="about">About <span>|</span> Contact Us</p>
+    </div>
+    <footer>
+        <img src="images/logo used in footer.svg"/>
+        <p style="margin: 0 16px; color: #0000001F;">|</p>
+        
+        <p class="copy">Copyright © 2020-2021 <span>Zeus Systems Pvt. Ltd.</span> All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="newdash.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    
+    <!-- <script src="newdash.js"></script> -->
+    <link rel="stylesheet" href="styles/newdash.css">
+ 
+    <style>
+        .a_d{
+        text-decoration:none;
+        padding:5px 0px;
+        margin-left:60px;
+        text-align:center;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <img class="brand_img" src="images/logo used in header.svg" alt="">
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item active"><a href="#">DASHBOARD</a></li>
+                <li class="nav_item"><a href="#">CONTENT</a></li>
+                <li class="nav_item"><a href="#">USERS</a></li>
+                <li class="nav_item"><a href="#">REPORTS</a></li>
+                <li class="nav_item"><a href="#">ADMIN</a></li>
+                <li class="nav_item" aria-owns="alert_div" aria-haspopup="true"><a href="#" onclick="alert_div()" aria-label="alert" tabindex="0" aria-owns="alert_div"><img class="alerts" src="images/alerts.svg" alt=""><span class="badge1">2</span></a>
+                    <div id="alert_div" tabindex="0"  >
+        
+                    </div>
+                </li>
+                <li class="nav_item"><a href="#" onclick="announce_div()" aria-label="announcements" ><img class="announce" src="images/announcements.svg" alt=""><span class="badge2">1</span></a></li>
+                <li class="nav_item"><a href="#" aria-label="profile"><img class="profile" src="images/kanchan_new.jpg" alt=""><span class="badgep">T</span></a></li>
+                <li class="nav_item"><a href="#" aria-label="menu" onclick="myFunction()" ><img class="hamburger" src="images/hamburger-menu.svg" alt=""></a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div id="myLinks">
+        <a href="#news" >DASHBOARD </a>
+       <div>
+        <a href="#contact" onclick="subcontent('.sub1')" >CONTENT <span class="arrow down" ></span></a>
+        <a class="subcontent sub1"  href="#course_catalog">COURSE CATALOG</a>
+       </div>
+       <div>
+        <a href="#contact" onclick="subcontent('.sub2')" >USERS <span class="arrow down" ></span></a>
+        <a class="subcontent sub2" href="#course_catalog">USERS CATALOG</a>
+       </div>
+       <div>
+        <a href="#contact" onclick="subcontent('.sub3')" >REPORTS <span class="arrow down" ></span></a>
+        <a class="subcontent sub3" href="#course_catalog">REPORTS CATALOG</a>
+       </div>
+       <div>
+        <a href="#contact" onclick="subcontent('.sub4')" >ADMIN <span class="arrow down" ></span></a>
+        <a class="subcontent sub4" href="#course_catalog">ADMIN CATALOG</a>
+       </div>
+    </div>
+    <!-- <div id="alert_div" tabindex="0"  >
+        
+    </div> -->
+    <div id="announce_div"></div>
+
+    <div class="tabs">
+        <div class="tab_option act" tabindex="0">
+            <img src="images/courses.svg" alt="">
+            <p>Courses</p>
+        </div>
+        <div class="tab_option" tabindex="0">
+            <img src="images/classes.svg" alt="" >
+            <p>Classes</p>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="show" tabindex="0">
+            <p>Showing 4 of 4 courses</p>
+        </div>
+        <div class="sort">
+            <p >Sort By:</p>
+            <input list="courses" placeholder="Course Name" id="browser" aria-label="sort by">
+            <datalist id="courses">
+                <option value="Course1">
+                <option value="Course2">
+            </datalist>
+            <img src="images/sort.svg" alt="" tabindex="0" aria-label="button sort by descending">
+        </div>
+    </div>
+    <hr style="margin:0px 24px;">
+
+    <div class="container"> </div>
+
+    <div style="margin-top: 32px; margin-bottom:0">
+        <p class="about">About <span>|</span> Contact Us</p>
+    </div>
+
+    </div>
+<footer class="footer_div">
+<!-- <div class="footer_div"> -->
+    <img src="images/logo used in footer.svg"/>
+<p style="margin: 0 16px; color: #0000001F;">|</p>
+
+<p class="copy">Copyright © 2020-2021 <span>Zeus Systems Pvt. Ltd.</span> All rights reserved.</p>
+<!-- </div> -->
+</footer>
+
+</body>
+<!-- <script src="newdash.js"> -->
+    <script src="newdash.js"></script>
+</script>
+</html>

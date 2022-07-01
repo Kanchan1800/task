@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "login-header.component.scss"
+    ],
+    "names": [],
+    "file": "login-header.component.css"
+}

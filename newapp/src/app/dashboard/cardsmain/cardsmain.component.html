@@ -1,0 +1,46 @@
+<app-cardfilter (changed)="filter($event)"></app-cardfilter>
+<div class="container">
+  <div class="card"  *ngFor="let card of filteredcards">
+    <div class="card_info">
+        <div class="card_top">
+            <img class="course_i" src={{card.image}} alt="">
+            <div class="card_content">
+                <h3 tabindex="0">{{card.title}}</h3>
+                <p>{{card.subject}}</p>
+                <p>
+                    <b style="margin-left: 0px;">{{card.units}}</b> Units
+                    <b>{{card.lessons}}</b> Lessons
+                    <b>{{card.topics}}</b>Topics
+                </p>
+                <input list="name" name="name" id="browser1" placeholder="{{card.input_placeholder}}" role='combo box' tabindex='0'>
+                    <datalist id="name">
+                      <option value="${card.input_placeholder}">
+                      <option value="Mr.XYZ">
+                      <option value="Mr.XYZZ">
+                      <option value="MrS.AAA">
+                      <option value="Mr.XYAZ">
+                    </datalist>
+                <div class="course_dates">
+                    <p>{{card.students}}</p>
+
+                    <p>
+                     <span class="dash">{{card.dash}}</span> {{card.dates}}</p>
+                </div>
+            </div>
+            <img class="fav" src="../assets/images/favourite.svg" alt="favourite">
+        </div>
+        <hr style="margin-top:16px">
+        <div class="card_footer">
+            <img class={{card.p1}} src="../assets/images/preview.svg" alt="preview">
+            <img class={{card.p2}} src="../assets/images/manage course.svg" alt="manage course">
+            <img class={{card.p3}} src="../assets/images/grade submissions.svg" alt="grade submissions">
+            <img class={{card.p4}} src="../assets/images/reports.svg" alt="reports">
+        </div>
+
+    </div>
+</div>
+
+</div>
+<div style="margin-top: 32px; margin-bottom:0">
+  <p class="about">About <span>|</span> Contact Us</p>
+</div>

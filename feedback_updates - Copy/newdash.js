@@ -173,12 +173,14 @@ contain.innerHTML = htmlCode;
 function myFunction() {
     var x = document.getElementById("myLinks");
     let hicon=document.querySelector('.hamburger');
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    if (x.style.visibility === "visible") {
+      x.style.visibility = "hidden";
+      x.style.opacity=0;
     //   hicon.style.filter='unset';
     hicon.setAttribute('src','images/hamburger-menu.svg')
     } else {
-      x.style.display = "block";
+      x.style.visibility = "visible";
+      x.style.opacity=1;
     //   hicon.style.filter='grayscale(1)';
       hicon.setAttribute('src','images/hamburger_white.svg')
     }
@@ -227,12 +229,12 @@ async function getalert(url) {
 
  function alert_div()
  {  
-     if(document.querySelector('#announce_div').style.display=="block"){
+     if(document.querySelector('#announce_div').style.visibility=="visible"){
         let z=document.querySelector('.badge2')
         let hicon=document.querySelector('.announce');
         z.style.display='block';
         hicon.setAttribute('src','images/announcements.svg');
-        document.querySelector('#announce_div').style.display="none";
+        document.querySelector('#announce_div').style.visibility="hidden";
      }
     const x=document.querySelector('#alert_div');
     let z=document.querySelector('.badge1')
@@ -272,7 +274,7 @@ async function getalert(url) {
     //   }
     if (x.style.visibility == "visible") {
         x.style.visibility = "hidden";
-        //x.style.opacity=0;
+        x.style.opacity=0;
         //x.style.transition='all visibility 0s, opacity 0.5s linear';
         z.style.display='block';
         hicon.setAttribute('src','images/alerts.svg');
@@ -321,12 +323,12 @@ async function getalerts(url) {
 
 
 function announce_div(){
-    if(document.querySelector('#alert_div').style.display=="block"){
+    if(document.querySelector('#alert_div').style.visibility=="visible"){
         let z=document.querySelector('.badge1')
         let hicon=document.querySelector('.alerts');
         z.style.display='block';
         hicon.setAttribute('src','images/alerts.svg');
-        document.querySelector('#alert_div').style.display="none";
+        document.querySelector('#alert_div').style.visibility="hidden";
      }
     const x=document.querySelector('#announce_div');
     let z=document.querySelector('.badge2')
@@ -364,13 +366,15 @@ function announce_div(){
     <div>
     `
     x.innerHTML=htmlCode;
-    if (x.style.display == "block") {
-        x.style.display = "none";
+    if (x.style.visibility == "visible") {
+        x.style.visibility = "hidden";
+        x.style.opacity=0;
         z.style.display='block';
         hicon.setAttribute('src','images/announcements.svg');
       } else {
-        x.style.display = "block";
+        x.style.visibility = "visible";
         z.style.display='none';
+        x.style.opacity=1;
         hicon.setAttribute('src','images/announce_white.svg');
       }
 }  

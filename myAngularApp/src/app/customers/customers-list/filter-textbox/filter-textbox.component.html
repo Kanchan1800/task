@@ -1,0 +1,10 @@
+<div class="filter-box">
+
+  <label>Filter:</label>
+  <!-- <input type="text" [value]="filter" (input)="filter=$event.target.value" />  one way of 2 way data binding -->
+  <input type="text" [(ngModel)]="filter" />
+  <!--  store the value []  and calls the event () [(ngModel)]-->
+
+  <label [style.color]="textColor">Username:</label>
+  <input type="text" [(ngModel)]="username"  >
+</div>

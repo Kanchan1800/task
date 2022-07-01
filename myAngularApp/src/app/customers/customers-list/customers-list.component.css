@@ -1,0 +1,18 @@
+.table {
+  border: 1px solid black;
+  margin: auto;
+  width: 33%;
+  height: auto;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/*# sourceMappingURL=customers-list.component.css.map */

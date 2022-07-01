@@ -1,0 +1,35 @@
+<app-filter-textbox  (changed)="filter($event)" (changedd)="username($event)">
+</app-filter-textbox>
+<br>
+<br>
+<table class="table table-hover">
+  <thead>
+    <tr>
+        <th (click)="sort('name')">Name</th>
+        <th (click)="sort('city')">City</th>
+        <th (click)="sort('orderTotal')">Order Total</th>
+    </tr>
+</thead>
+<tr *ngFor="let cust of filteredCustomers">
+    <td>
+        <a  [routerLink]="['/orders', cust.id]">
+            {{ cust.name | capitalize }}
+            <!--  toh sabse pehele we know ki capitalize pipe shared module me hai toh usko customer module me jaake register kar customer module ke imports andar-->
+            <!-- {{ cust.name |titlecase}} this is how inbuilt pipes can be used but for the same we can build custom pipes they are shared folder -->
+        </a>
+    </td>
+    <td>{{ cust.city }}</td>
+    <td>{{ cust.orderTotal | currency:currencyCode:'symbol' }}</td>
+</tr>
+<tr *ngIf="filteredCustomers && filteredCustomers.length">
+    <td colspan="2"> Total Price</td>
+    <td>
+        {{ customersOrderTotal | currency:currencyCode:'symbol' }}
+    </td>
+</tr>
+<tr *ngIf="!filteredCustomers || !filteredCustomers.length">
+    <td colspan="4">No customers found</td>
+</tr>
+</table>
+Number of Customers: {{ filteredCustomers.length }}
+<br />

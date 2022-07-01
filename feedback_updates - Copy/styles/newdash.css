@@ -96,8 +96,8 @@ li > a > img {
   -webkit-box-shadow: 0px 13px 20px #0000003D;
           box-shadow: 0px 13px 20px #0000003D;
   opacity: 0;
-  -webkit-transition: visibility 0s, opacity 0.5s ease-in-out;
-  transition: visibility 0s, opacity 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .alert_message {
@@ -177,7 +177,10 @@ li > a > img {
 }
 
 #announce_div {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   z-index: 1;
   width: 20%;
   position: absolute;
@@ -242,7 +245,10 @@ li > a > img {
 }
 
 #myLinks {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .dropdown-content {
@@ -644,7 +650,10 @@ footer {
     margin-right: 0px;
   }
   #myLinks {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     background-color: #FFFFFF;
     position: absolute;
     margin-left: 72%;
@@ -723,6 +732,12 @@ footer {
   .container {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  #myLinks {
+    display: none;
   }
 }
 /*# sourceMappingURL=newdash.css.map */
