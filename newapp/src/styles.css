@@ -297,6 +297,15 @@ span.badgep {
   color: white !important;
 }
 
+.inactive {
+  border-bottom: 0px ;
+  color: #3fd28b;
+}
+
+.inactive a {
+  color: #3fd28b;
+}
+
 .tabs {
   display: -webkit-box;
   display: -ms-flexbox;

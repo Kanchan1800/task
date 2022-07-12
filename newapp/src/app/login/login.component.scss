@@ -10,7 +10,7 @@ header{
   /*padding: 10px 0 0px 24px;*/
 
   border-bottom: 2px solid #31B9E4;
-  background: transparent url('images/header\ pattern\ image.png') 0% 0% repeat;
+  background: transparent url('/src/assets/images/header\ pattern\ image.png') 0% 0% repeat;
   /* mix-blend-mode: overlay; */
   opacity: 0.8;
   background-color: #25313F;
@@ -38,7 +38,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   /* SVG background image */
-  background-image: url("images/arrow-down.svg");
+  background-image: url("/src/assets/images/arrow-down.svg");
     background-size: 30px;
     background-position: calc(100% - 0.001em) center;
     background-repeat: no-repeat;

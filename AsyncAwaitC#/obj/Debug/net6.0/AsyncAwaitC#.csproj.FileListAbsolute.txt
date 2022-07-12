@@ -1,0 +1,15 @@
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\bin\Debug\net6.0\AsyncAwaitC#.exe
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\bin\Debug\net6.0\AsyncAwaitC#.deps.json
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\bin\Debug\net6.0\AsyncAwaitC#.runtimeconfig.json
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\bin\Debug\net6.0\AsyncAwaitC#.dll
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\bin\Debug\net6.0\AsyncAwaitC#.pdb
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\AsyncAwaitC#.csproj.AssemblyReference.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\AsyncAwaitC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\AsyncAwaitC#.AssemblyInfoInputs.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\AsyncAwaitC#.AssemblyInfo.cs
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\AsyncAwaitC#.csproj.CoreCompileInputs.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\AsyncAwaitC#.dll
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\refint\AsyncAwaitC#.dll
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\AsyncAwaitC#.pdb
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\AsyncAwaitC#.genruntimeconfig.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\AsyncAwaitC#\obj\Debug\net6.0\ref\AsyncAwaitC#.dll

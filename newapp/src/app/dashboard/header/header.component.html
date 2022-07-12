@@ -1,20 +1,20 @@
 <header>
-  <img class="brand_img" src="images/logo used in header.svg" alt="">
+  <img class="brand_img" src="/assets/images/logo used in header.svg" alt="Brand logo">
   <nav class="nav">
       <ul class="nav_list">
-          <li class="nav_item active"><a href="#">DASHBOARD</a></li>
-          <li class="nav_item"><a href="#">CONTENT</a></li>
-          <li class="nav_item"><a href="#">USERS</a></li>
-          <li class="nav_item"><a href="#">REPORTS</a></li>
-          <li class="nav_item"><a href="#">ADMIN</a></li>
-          <li class="nav_item" aria-owns="alert_div" aria-haspopup="true"><a href="#" (click)="alert_div()" aria-label="alert" tabindex="0" aria-owns="alert_div"><img class="alerts" src="../assets/images/alerts.svg" alt=""><span class="badge1">2</span></a>
+          <li class="nav_item " [ngClass]="[isActive?'active':'inactive'] "  id="nav_dashboard" ><a href="#" [routerLink]="['/dashboard']">DASHBOARD</a></li>
+          <li class="nav_item"  id="nav_content" ><a href="#" [routerLink]="['/content']">CONTENT</a></li>
+          <li class="nav_item" [ngClass]="{active:isActiveUsers} " id="nav_users"><a href="#" [routerLink]="['/users']">USERS</a></li>
+          <li class="nav_item" [ngClass]="{active:isActiveReports} " id="nav_reports"><a href="#" [routerLink]="['/reports']">REPORTS</a></li>
+          <li class="nav_item" [ngClass]="{active:isActiveAdmin} " id="nav_admin"><a href="#" [routerLink]="['/admin']">ADMIN</a></li>
+          <li class="nav_item"  aria-owns="alert_div" aria-haspopup="true"><a href="#" [routerLink]="['/dashboard/alert']" (click)="alert_div()" aria-label="alert" tabindex="0" aria-owns="alert_div"><img class="alerts" src="../assets/images/alerts.svg" alt=""><span class="badge1">2</span></a>
               <div id="alert_div" tabindex="0"  >
 
               </div>
           </li>
-          <li class="nav_item"><a href="#" (click)="announce_div()" aria-label="announcements" ><img class="announce" src="../assets/images/announcements.svg" alt=""><span class="badge2">1</span></a></li>
-          <li class="nav_item"><a href="#" aria-label="profile"><img class="profile" src="../assets/images/kanchan_new.jpg" alt=""><span class="badgep">T</span></a></li>
-          <li class="nav_item"><a href="#" aria-label="menu" (click)="myFunction()" ><img class="hamburger" src="../assets/images/hamburger-menu.svg" alt=""></a></li>
+          <li class="nav_item"><a href="" [routerLink]="['/dashboard/announce']" (click)="announce_div()" aria-label="announcements" ><img class="announce" src="../assets/images/announcements.svg" alt=""><span class="badge2">1</span></a></li>
+          <li class="nav_item"><a href=""  [routerLink]="['/dashboard/profile']" aria-label="profile"><img class="profile" src="../assets/images/kanchan_new.jpg" alt=""><span class="badgep">T</span></a></li>
+          <li class="nav_item"><a href=""  [routerLink]="['/dashboard/menu']" aria-label="menu" (click)="myFunction()" ><img class="hamburger" src="../assets/images/hamburger-menu.svg" alt=""></a></li>
       </ul>
   </nav>
 
@@ -22,19 +22,19 @@
 <div id="myLinks">
   <a href="#news" >DASHBOARD </a>
  <div>
-  <a href="#contact" onclick="subcontent('.sub1')" >CONTENT <span class="arrow down" ></span></a>
-  <a class="subcontent sub1"  href="#course_catalog">COURSE CATALOG</a>
+  <a href="" [routerLink]="['/dashboard/menu/subcontent']" (click)="subcontent('.sub1')" >CONTENT <span class="arrow down" ></span></a>
+  <a class="subcontent sub1"  href="#course_catalog" >COURSE CATALOG</a>
  </div>
  <div>
-  <a href="#contact" onclick="subcontent('.sub2')" >USERS <span class="arrow down" ></span></a>
+  <a href="#contact"  [routerLink]="['/dashboard/menu/subcontent']" (click)="subcontent('.sub2')" >USERS <span class="arrow down" ></span></a>
   <a class="subcontent sub2" href="#course_catalog">USERS CATALOG</a>
  </div>
  <div>
-  <a href="#contact" onclick="subcontent('.sub3')" >REPORTS <span class="arrow down" ></span></a>
+  <a href="#contact" [routerLink]="['/dashboard/menu/subcontent']" (click)="subcontent('.sub3')" >REPORTS <span class="arrow down" ></span></a>
   <a class="subcontent sub3" href="#course_catalog">REPORTS CATALOG</a>
  </div>
  <div>
-  <a href="#contact" onclick="subcontent('.sub4')" >ADMIN <span class="arrow down" ></span></a>
+  <a href="#contact" [routerLink]="['/dashboard/menu/subcontent']" (click)="subcontent('.sub4')" >ADMIN <span class="arrow down" ></span></a>
   <a class="subcontent sub4" href="#course_catalog">ADMIN CATALOG</a>
  </div>
 </div>

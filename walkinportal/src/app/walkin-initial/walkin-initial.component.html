@@ -1,0 +1,19 @@
+<app-login-header></app-login-header>
+
+<div class="container">
+  <div *ngFor="let walkin of walkins" class="card">
+    <div class="card_header">
+    <h2>{{walkin.Title}}</h2>
+    <div class="expires">Expires in {{walkin.ExpiresIn}} days</div>
+
+  </div>
+    <p>Date & Time :</p>
+    <span class="date">{{walkin.Duration}}</span> <span> | </span><span> {{walkin.Location}}</span>
+    <hr>
+    <p>Job Roles:</p>
+    <div>
+    <span *ngFor="let role of walkin.Roles" class="roles"> {{ role }} </span></div>
+    <div class="internship" *ngIf="walkin.InternshipDetails">{{walkin.InternshipDetails}}</div>
+    <div class="view_button"><button> VIEW MORE DETAILS</button></div>
+  </div>
+</div>

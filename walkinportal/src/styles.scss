@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0px;
+  background-color: #EEEEEE;
+  font-family: myFirstFont;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(assets/font/Quicksand-VariableFont_wght.ttf);
+  font-display: swap;
+}
+::placeholder{
+  font-family: myFirstFont;
+  font-weight: 700;
+  font-size: 16px;
+}

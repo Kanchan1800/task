@@ -17,6 +17,8 @@ import { LoginHeaderComponent } from './login/login-header/login-header.componen
 import { LoginMainComponent } from './login/login-main/login-main.component';
 import { DashboardRoutingModule } from './dashboard/dashboard-routing.module';
 import { LoginRoutingModule } from './login/login-routing.module';
+import { ContentComponent } from './content/content.component';
+import { ContentRoutingModule } from './content/content-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,10 +32,11 @@ import { LoginRoutingModule } from './login/login-routing.module';
     LoginComponent,
     LoginHeaderComponent,
     LoginMainComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,CoreModule,FormsModule,LoginRoutingModule,DashboardRoutingModule
+    AppRoutingModule,CoreModule,FormsModule,LoginRoutingModule,DashboardRoutingModule,ContentRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

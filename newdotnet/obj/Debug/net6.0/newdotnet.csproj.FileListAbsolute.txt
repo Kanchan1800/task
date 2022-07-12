@@ -1,0 +1,15 @@
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\bin\Debug\net6.0\newdotnet.exe
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\bin\Debug\net6.0\newdotnet.deps.json
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\bin\Debug\net6.0\newdotnet.runtimeconfig.json
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\bin\Debug\net6.0\newdotnet.dll
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\bin\Debug\net6.0\newdotnet.pdb
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\newdotnet.csproj.AssemblyReference.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\newdotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\newdotnet.AssemblyInfoInputs.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\newdotnet.AssemblyInfo.cs
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\newdotnet.csproj.CoreCompileInputs.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\newdotnet.dll
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\refint\newdotnet.dll
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\newdotnet.pdb
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\newdotnet.genruntimeconfig.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\newdotnet\obj\Debug\net6.0\ref\newdotnet.dll

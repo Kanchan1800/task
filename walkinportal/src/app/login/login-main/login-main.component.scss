@@ -1,0 +1,49 @@
+form{
+  width:25%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  background-color: white;
+  text-align: center;
+  border-top: 4px solid rgb(58,199,236);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+input[type=text]{
+  width: 95%;
+  border: 0px;
+  border-bottom: 1px solid black;
+  margin-top: 20px ;
+
+}
+a{
+  color: #1F7A54;
+  font-size: 12px;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  padding-right: 5px;
+  font-size: 13px;
+}
+input[type=checkbox]{
+  accent-color: green;
+}
+#checkbox_div{
+  margin-top: 10px ;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+button{
+  background-color: #3FD28B;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 30px;
+  border: 0px;
+  box-shadow: 1px 1px 1px 1px lightgray;
+}

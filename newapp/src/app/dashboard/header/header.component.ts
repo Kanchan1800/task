@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/core/data.service';
 import { IAlerts,IAnnounce } from 'src/app/shared/interface';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,7 +10,13 @@ import { IAlerts,IAnnounce } from 'src/app/shared/interface';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private dataService:DataService ) { }
+  constructor(private dataService:DataService,private router:Router ) { }
+  isActive=false;
+  isActiveContent=false;
+  isActiveUsers=false;
+  isActiveReports=false;
+  isActiveAdmin=false;
+
   alerts:IAlerts[]=[];
   announcements:IAnnounce[]=[];
   ngOnInit(): void {
@@ -18,6 +26,8 @@ export class HeaderComponent implements OnInit {
     this.dataService.getAnnouncements()
     .subscribe((announcements: IAnnounce[]) => this.announcements = announcements);
   }
+
+
 
    alert_div()
   {
@@ -164,6 +174,7 @@ myFunction(){
       hicon.setAttribute('src','../assets/images/hamburger_white.svg')
     }
 }
+
  subcontent(e:any){
   let sub=document.querySelector(e)
   if(sub.style.display=='none'){
@@ -172,6 +183,13 @@ myFunction(){
   else{
       sub.style.display='none'
   }
+}
+changecontentclass(){
+  let nav1=document.querySelector('#nav_dashboard') as HTMLUListElement;
+  let currentnav=document.getElementById('nav_content') as HTMLUListElement;
+  nav1.classList.remove('active');
+  currentnav.classList.add('active');
+  this.router.navigate(['/content']);
 }
 
 

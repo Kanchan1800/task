@@ -1,3 +1,11 @@
+export interface IUsers{
+  choice:string;
+  state:string;
+  district:string;
+  username:string;
+  password:string;
+
+}
 export interface IAlerts {
   content: string;
   date: string;

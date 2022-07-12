@@ -1,0 +1,25 @@
+[
+  {
+    "choice":"District",
+    "state":"Alabama1",
+    "district":"Alabama School District 1",
+    "username":"kanchan.choudhari",
+    "password":"12345"
+  },
+  {
+
+    "choice":"District",
+    "state":"Alabama1",
+    "district":"Alabama School District 1",
+    "username":"arvind.choudhari",
+    "password":"123456"
+  },
+  {
+
+    "choice":"District",
+    "state":"Alabama1",
+    "district":"Alabama School District 1",
+    "username":"girish.choudhari",
+    "password":"123"
+  }
+]

@@ -12,9 +12,9 @@
                     <b>{{card.lessons}}</b> Lessons
                     <b>{{card.topics}}</b>Topics
                 </p>
-                <input list="name" name="name" id="browser1" placeholder="{{card.input_placeholder}}" role='combo box' tabindex='0'>
+                <input list="name" name="name" id="browser1" placeholder="{{card.input_placeholder}}" tabindex='0'>
                     <datalist id="name">
-                      <option value="${card.input_placeholder}">
+                      <option value="${{card.input_placeholder}}">
                       <option value="Mr.XYZ">
                       <option value="Mr.XYZZ">
                       <option value="MrS.AAA">
@@ -27,7 +27,7 @@
                      <span class="dash">{{card.dash}}</span> {{card.dates}}</p>
                 </div>
             </div>
-            <img class="fav" src="../assets/images/favourite.svg" alt="favourite">
+            <img class="fav" id="{{card.title}}" src="../assets/images/favourite.svg" alt="favourite" (click)="togg(card.title)">
         </div>
         <hr style="margin-top:16px">
         <div class="card_footer">

@@ -40,6 +40,17 @@ filteredcards:ICards[]=[];
         this.filteredcards =this.cards;
     }
   }
+togg(title:string){
+    let e= document.getElementById(title)as HTMLImageElement;
+    let source='http://localhost:4200/assets/images/blank_star.svg';
+    let star='http://localhost:4200/assets/images/favourite.svg';
+    console.log(e.src)
+    if(e.src==star)
+    e.setAttribute('src',source)
+    else{
+        e.setAttribute('src',star)
+    }
 
+}
 
 }

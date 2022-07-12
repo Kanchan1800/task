@@ -1,0 +1,13 @@
+<b>message from kanchan:</b>{{messagefromkanchan}}<br>
+
+
+  <b>message from kanchan using output and event emitter :</b>{{kanchanmessageusingoutput}}<br>
+
+  <app-me [childMessage]="parentMessage" (messageEvent)="receiveMessage($event)"  (changed)="filter($event)" ></app-me><br>
+
+  <app-brother [childMessage]="parentMessageToBro"></app-brother><br>
+
+  <b>Message from brother:</b>{{messagefrombrother}}<br>
+
+  <b>message of input box from kanchan : </b> {{filter_msg}}<br><br><br><br>
+

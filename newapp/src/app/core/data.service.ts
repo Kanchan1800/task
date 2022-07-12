@@ -25,6 +25,10 @@ getCards() :Observable<ICards[]>{
   return this.http.get<ICards[]>(this.baseUrl+'cards.json').pipe(catchError(this.handleError));
 }
 
+getUsers():Observable<any[]>{
+  return this.http.get<any[]>(this.baseUrl+'users.json').pipe(catchError(this.handleError));
+}
+
 
   private handleError(error: any) {
     console.error('server error:', error);
