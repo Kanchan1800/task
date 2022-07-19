@@ -8,6 +8,8 @@ import { LoginHeaderComponent } from './login/login-header/login-header.componen
 import { LoginMainComponent } from './login/login-main/login-main.component';
 import { WalkinInitialComponent } from './walkin-initial/walkin-initial.component';
 import { HttpClientModule } from '@angular/common/http';
+import { WalkinInfoComponent } from './walkin-initial/walkin-info/walkin-info.component';
+import { WalkinInfoRoutingModule } from './walkin-initial/walkin-info/walkin-info-routing';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,11 @@ import { HttpClientModule } from '@angular/common/http';
     LoginHeaderComponent,
     LoginMainComponent,
     WalkinInitialComponent,
+    WalkinInfoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,HttpClientModule
+    AppRoutingModule,HttpClientModule,WalkinInfoRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

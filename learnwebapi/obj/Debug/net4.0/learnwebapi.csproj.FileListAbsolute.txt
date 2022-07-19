@@ -1,0 +1,6 @@
+C:\Users\kanchan.choudhari\Desktop\training\task\learnwebapi\obj\Debug\net4.0\learnwebapi.csproj.AssemblyReference.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\learnwebapi\obj\Debug\net4.0\learnwebapi.csproj.SuggestedBindingRedirects.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\learnwebapi\obj\Debug\net4.0\learnwebapi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kanchan.choudhari\Desktop\training\task\learnwebapi\obj\Debug\net4.0\learnwebapi.AssemblyInfoInputs.cache
+C:\Users\kanchan.choudhari\Desktop\training\task\learnwebapi\obj\Debug\net4.0\learnwebapi.AssemblyInfo.cs
+C:\Users\kanchan.choudhari\Desktop\training\task\learnwebapi\obj\Debug\net4.0\learnwebapi.csproj.CoreCompileInputs.cache

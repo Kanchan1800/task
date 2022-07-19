@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { dataservice } from '../services/dataservice';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-walkin-initial',
@@ -8,7 +9,7 @@ import { dataservice } from '../services/dataservice';
 })
 export class WalkinInitialComponent implements OnInit {
 
-  constructor(private dataservice: dataservice) { }
+  constructor(private router: Router,private dataservice: dataservice) { }
  walkins:any;
   ngOnInit(){
     this.dataservice.getWalkin().subscribe((data)=>{
@@ -21,5 +22,6 @@ export class WalkinInitialComponent implements OnInit {
     });
 
   }
+
 
 }

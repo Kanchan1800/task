@@ -1,0 +1,66 @@
+<app-login-header></app-login-header>
+<div class="container">
+  <div  class="card_outer">
+    <div  class="card">
+    <div class="card_header">
+    <h2>{{walkin.title}}</h2>
+    <div class="view_button"><button [routerLink]="'/walkin/{{walkin.id}}'">APPLY</button></div>
+
+
+  </div>
+    <p>Date & Time :</p>
+    <span class="date">{{walkin.duration}}</span> <span> | </span><span> {{walkin.location}}</span>
+    <hr>
+    <p>Job Roles:</p>
+    <div class="roles">
+    <span *ngFor="let role of walkin.roles" class="roles"> {{ role }} </span></div>
+    <div class="internship" *ngIf="walkin.internshipDetails">{{walkin.internshipDetails}}</div>
+
+  </div>
+  <div  class="pre_requisites" (click)="showdetails()"> Pre-requisites & Application Process </div>
+  <div id="pre_requisites_details" *ngIf="walkin.general_instruc" >
+    <p >General Instructions</p>
+    <p class="pre_requisites_info">{{walkin.general_instruc}}</p>
+    <p>Instructions for the Exam</p>
+    <p class="pre_requisites_info">{{walkin.exam_instruc}}</p>
+    <p>Minimum System Requirements</p>
+    <p class="pre_requisites_info">{{walkin.system_req}}</p>
+  </div>
+  </div>
+
+  <div class="time_and_role">
+    <h3>Time Slots & Preferences</h3>
+    <p>Select a Time Slot</p>
+    <div *ngFor="let time of walkin.timeslot">
+    <input type="radio" id="slot1" name="slot" value="9 to 11">
+    <label for="slot1"> {{time.timeslotDetail}}</label><br>
+  </div>
+    <!-- <input type="radio" id="slot2" name="slot" value="1 to 3">
+    <label for="slot2"> 1:00 AM to 3:00 AM</label><br> -->
+    <hr>
+    <p>Preferences</p>
+    <div *ngFor="let role of walkin.roles">
+    <input type="checkbox" id="{{role}}" name="slot1" value="{{role}}">
+    <label for="{{role}}">{{role}}</label><br>
+
+  </div>
+  <hr>
+  <input type="file" name="filename" id="upload"  style="display:none">
+  <label for="upload"  style="color:#1F7A54">UPLOAD UPDATED RESUME</label>
+
+  </div>
+  <div  *ngFor="let role of walkin.role" >
+    <div class="roles_info" (click)="showRolesDescription(role.role_Title)" >{{role.role_Title}}
+    </div>
+    <div class="roles_description_class" id="{{role.role_Title+'description'}}"  >
+      <p >Roles Description:</p>
+      <p class="roles_description">{{role.description}}</p>
+      <p>Package :</p>
+      <p class="roles_description">{{role.package}}</p>
+    </div>
+
+
+  </div>
+
+
+</div>

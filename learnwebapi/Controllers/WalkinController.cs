@@ -60,7 +60,7 @@ public class WalkinController : ControllerBase // this class derives from Contro
          if (id != walkin.Id)
         return BadRequest();
            
-        var existingWalkin = PizzaService.Get(id);
+        var existingWalkin = WalkinService.Get(id);
         if(existingWalkin is null)
             return NotFound();
     
@@ -83,5 +83,28 @@ public class WalkinController : ControllerBase // this class derives from Contro
         WalkinService.Delete(id);
     
         return NoContent();
+    }
+
+
+   
+     [HttpGet("{title},{id}")]
+    public ActionResult<Walkin> Get(String title ,int id)
+    {
+        var walkin=WalkinService.IsValid(title,id);
+
+        if(walkin is null)
+            return NoContent();
+
+        return walkin;
+    }
+
+     [HttpPost("{title}")]
+    public ActionResult<Walkin> CreateNew(String title ,int id)
+    {            
+         var walkin= WalkinService.IsValid(title,id);;
+    if(walkin is null)
+            return NoContent();
+
+        return walkin;
     }
 }
