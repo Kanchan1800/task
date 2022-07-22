@@ -1,24 +1,22 @@
 namespace walkinapi.Models
 {
-public class ProfessionallQualification
+public class ProfessionalQualification
 {
     
-    public int ProfessionalQualificationId { get; set; }
+    public int Id { get; set; }
     public int Users_Id { get; set; }
-    public string? ApplicantType { get; set; }
-    public int? ExperienceYears { get; set; }
-    public int? CurrentCtc { get; set; }
-    public int? ExpectedCtc { get; set; }
-    //public FamiliarTech? Familiar_Tech{ get; set; }
-    public string[]? ExpertiseIn { get; set; }
+    public bool? IsFresher { get; set; }
+    public string? ExperienceYears { get; set; }
+    public string? Current_Ctc { get; set; }
+    public string? Expected_Ctc { get; set; }
     public bool? OnNoticePeriod{ get; set; }
-    public DateTime? NoticePeriodEndsOn { get; set; }
+    public string? NoticePeriodEnds { get; set; }
 
-    public string? NoticePeriodDuration{get;set;}
+    public string? NoticeDuration{get;set;}
 
     public bool? AppliedBefore{get;set;}
-    public string? ForWhichRole{get;set;}
-
+    public string? RoleBefore{get;set;}
+    public bool? GivenZeusTest{get;set;}
 
 }
 }

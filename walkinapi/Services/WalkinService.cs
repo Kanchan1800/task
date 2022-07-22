@@ -18,6 +18,7 @@ public static class WalkinService
             new Roles{Roles_Id=3,Walkin_Id=1,Role_Title="DESIGNER",Description="DESIGNER's description",Package="4 LPA"},
             new Roles{Roles_Id=4,Walkin_Id=2,Role_Title="DESIGNER",Description="DESIGNER's description",Package="3.5 LPA"},
         };
+        
         Timeslot=new System.Collections.Generic.List<Timeslots>{
             new Timeslots{Timeslots_Id=1,Walkin_Id=1,TimeslotDetail="9:00AM to 11:00AM"},
             new Timeslots{Timeslots_Id=2,Walkin_Id=1,TimeslotDetail="1:00PM to 3:00PM"},
@@ -25,6 +26,7 @@ public static class WalkinService
             new Timeslots{Timeslots_Id=4,Walkin_Id=2,TimeslotDetail="9:00AM to 12:00AM"},
             new Timeslots{Timeslots_Id=5,Walkin_Id=2,TimeslotDetail="1:00PM to 3:00PM"},
         };
+
         Walkins = new List<Walkin>
         {
             new Walkin { Id = 1, Title = "Walkin for multiple roles", Duration = "1-Jul-2022 to 14-Jul-2022",Roles=new string []{"DEV","QA","DESIGNER"},Location="Mumbai",
